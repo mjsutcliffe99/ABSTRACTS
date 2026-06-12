@@ -12,7 +12,7 @@ def run(circuit_file: str):
     g.apply_effect("0"*q)
     zx.simplify.full_reduce(g)
 
-    return zx.simulation.simulate(Strategy.MAGIC_CAT, g)
+    return zx.simulation.simulate(Strategy.BSS, g) #TEMP (should be magic_cat)
 
 def main():
     #if len(sys.argv) != 2:
