@@ -1,0 +1,45 @@
+{
+  "method": "pyzx_bss",
+  "benchmark_set": "circuits/test",
+  "runs": [
+    {
+      "benchmark": "test_seed_1.txt",
+      "benchmark_file": "circuits/test/test_seed_1.txt",
+      "status": "success",
+      "exit_status": 0,
+      "result": "(-0.0013404130879200564+0.04715260864009959j)",
+      "wall_time": "0:01.89",
+      "user_time_seconds": 1.19,
+      "system_time_seconds": 0.12,
+      "cpu_time_seconds": 1.31,
+      "peak_memory_kb": 76620
+    }
+,
+    {
+      "benchmark": "test_seed_2.txt",
+      "benchmark_file": "circuits/test/test_seed_2.txt",
+      "status": "success",
+      "exit_status": 0,
+      "result": "(0.021218673888044763+0.035601410276089485j)",
+      "wall_time": "0:02.03",
+      "user_time_seconds": 2.07,
+      "system_time_seconds": 0.06,
+      "cpu_time_seconds": 2.13,
+      "peak_memory_kb": 79168
+    }
+,
+    {
+      "benchmark": "test_seed_3.txt",
+      "benchmark_file": "circuits/test/test_seed_3.txt",
+      "status": "success",
+      "exit_status": 0,
+      "result": "(0.03221665416508423+0.02773747518852718j)",
+      "wall_time": "1:11.58",
+      "user_time_seconds": 71.45,
+      "system_time_seconds": 0.22,
+      "cpu_time_seconds": 71.67,
+      "peak_memory_kb": 235752
+    }
+
+  ]
+}
