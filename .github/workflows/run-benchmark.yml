@@ -1,0 +1,77 @@
+name: Run benchmark on AWS
+
+on:
+  workflow_dispatch:
+    inputs:
+      method:
+        description: "Method to benchmark"
+        required: true
+        default: "pyzx_bss"
+      benchmark_dir:
+        description: "Benchmark directory"
+        required: true
+        default: "circuits/test"
+
+permissions:
+  contents: write
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-north-1
+
+      - name: Start EC2 instance
+        run: |
+          aws ec2 start-instances --instance-ids ${{ secrets.AWS_INSTANCE_ID }}
+          aws ec2 wait instance-status-ok --instance-ids ${{ secrets.AWS_INSTANCE_ID }}
+
+      - name: Write SSH key
+        run: |
+          echo "${{ secrets.AWS_SSH_KEY }}" > aws_key.pem
+          chmod 600 aws_key.pem
+
+      - name: Run benchmark on EC2
+        run: |
+          ssh -o StrictHostKeyChecking=no -i aws_key.pem ubuntu@${{ secrets.AWS_HOST }} << 'EOF'
+            set -e
+            cd ~/ABSTRACTS
+            git pull origin main
+            source .venv/bin/activate
+            ./run_method.sh "${{ github.event.inputs.method }}" "${{ github.event.inputs.benchmark_dir }}"
+          EOF
+
+      - name: Copy JSON results back from EC2
+        run: |
+          mkdir -p results
+          scp -o StrictHostKeyChecking=no -i aws_key.pem \
+            ubuntu@${{ secrets.AWS_HOST }}:~/ABSTRACTS/results/*.json \
+            results/
+
+      - name: Commit JSON results
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add results/*.json
+
+          if git diff --cached --quiet; then
+            echo "No JSON result changes to commit"
+          else
+            git commit -m "Add benchmark results for ${{ github.event.inputs.method }}"
+            git push
+          fi
+
+      - name: Stop EC2 instance
+        if: always()
+        run: |
+          aws ec2 stop-instances --instance-ids ${{ secrets.AWS_INSTANCE_ID }}
