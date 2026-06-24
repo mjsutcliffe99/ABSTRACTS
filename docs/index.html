@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <title>Sample Plot</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+
+<body>
+  <h1>Clifford+T Simulator Benchmarks</h1>
+
+  <div id="plot" style="width: 900px; height: 500px;"></div>
+
+  <script>
+    const data = [
+      {
+        x: ["test_seed_1", "test_seed_2", "test_seed_3"],
+        y: [1.89, 2.03, 71.58],
+        type: "bar",
+        name: "pyzx_bss"
+      }
+    ];
+
+    const layout = {
+      title: "Wall time per benchmark",
+      xaxis: { title: "Benchmark" },
+      yaxis: { title: "Wall time, seconds" }
+    };
+
+    Plotly.newPlot("plot", data, layout);
+  </script>
+</body>
+</html>
