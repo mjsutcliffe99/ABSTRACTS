@@ -24,11 +24,22 @@ for BENCHMARK_FILE in "$BENCHMARK_DIR"/*.qasm; do
 
     echo "Running $METHOD on $BENCHMARK_FILE"
 
-    /usr/bin/time -v -o "$TIME_FILE" \
-        ./methods/$METHOD/run.sh "$BENCHMARK_FILE" \
+    if /usr/bin/time -v -o "$TIME_FILE" \
+        timeout 10m ./methods/$METHOD/run.sh "$BENCHMARK_FILE" \
         > "$STDOUT_FILE"
+    then
+        EXIT_STATUS=0
+    else
+        EXIT_STATUS=$?
+    fi
 
-    EXIT_STATUS=$?
+    if [ "$EXIT_STATUS" -eq 0 ]; then
+        STATUS="success"
+    elif [ "$EXIT_STATUS" -eq 124 ]; then
+        STATUS="timed out"
+    else
+        STATUS="failed"
+    fi
 
     USER_TIME=$(grep "User time" "$TIME_FILE" | awk '{print $4}')
     SYSTEM_TIME=$(grep "System time" "$TIME_FILE" | awk '{print $4}')
@@ -51,7 +62,7 @@ EOF
     {
       "benchmark": "$BENCHMARK_NAME",
       "benchmark_file": "$BENCHMARK_FILE",
-      "status": "$([ $EXIT_STATUS -eq 0 ] && echo success || echo failed)",
+      "status": "$STATUS",
       "exit_status": $EXIT_STATUS,
       "result": "$RESULT",
       "wall_time": "$WALL_TIME",
