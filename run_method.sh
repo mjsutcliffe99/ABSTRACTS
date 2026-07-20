@@ -6,7 +6,18 @@ BENCHMARK_DIR=$2
 RESULTS_DIR="results"
 RESULTS_FILE="$RESULTS_DIR/${METHOD}_$(basename "$BENCHMARK_DIR").json"
 
+CIRCUIT_TIMEOUT="10m"
+GLOBAL_TIMEOUT_SECONDS=$((3 * 60 * 60))
+
 mkdir -p "$RESULTS_DIR"
+
+shopt -s nullglob
+QASM_FILES=("$BENCHMARK_DIR"/*.qasm)
+
+if [ ${#QASM_FILES[@]} -eq 0 ]; then
+    echo "No QASM files found in $BENCHMARK_DIR" >&2
+    exit 1
+fi
 
 {
 echo "{"
@@ -16,8 +27,16 @@ echo "  \"runs\": ["
 } > "$RESULTS_FILE"
 
 FIRST=true
+START_TIME=$(date +%s)
 
-for BENCHMARK_FILE in "$BENCHMARK_DIR"/*.qasm; do
+for BENCHMARK_FILE in "${QASM_FILES[@]}"; do
+    NOW=$(date +%s)
+
+    if (( NOW - START_TIME >= GLOBAL_TIMEOUT_SECONDS )); then
+        echo "Global benchmark timeout reached."
+        break
+    fi
+
     BENCHMARK_NAME=$(basename "$BENCHMARK_FILE")
     TIME_FILE=$(mktemp)
     STDOUT_FILE=$(mktemp)
@@ -25,7 +44,8 @@ for BENCHMARK_FILE in "$BENCHMARK_DIR"/*.qasm; do
     echo "Running $METHOD on $BENCHMARK_FILE"
 
     if /usr/bin/time -v -o "$TIME_FILE" \
-        timeout 10m ./methods/$METHOD/run.sh "$BENCHMARK_FILE" \
+        timeout "$CIRCUIT_TIMEOUT" \
+        ./methods/"$METHOD"/run.sh "$BENCHMARK_FILE" \
         > "$STDOUT_FILE"
     then
         EXIT_STATUS=0
