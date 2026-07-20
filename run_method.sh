@@ -19,15 +19,20 @@ if [ ${#QASM_FILES[@]} -eq 0 ]; then
     exit 1
 fi
 
+START_TIME=$(date +%s)
+STARTED_AT=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+GIT_COMMIT=$(git rev-parse HEAD)
+
 {
 echo "{"
 echo "  \"method\": \"$METHOD\","
 echo "  \"benchmark_set\": \"$BENCHMARK_DIR\","
+echo "  \"started_at\": \"$STARTED_AT\","
+echo "  \"git_commit\": \"$GIT_COMMIT\","
 echo "  \"runs\": ["
 } > "$RESULTS_FILE"
 
 FIRST=true
-START_TIME=$(date +%s)
 
 for BENCHMARK_FILE in "${QASM_FILES[@]}"; do
     NOW=$(date +%s)
@@ -96,9 +101,15 @@ EOF
     rm "$TIME_FILE" "$STDOUT_FILE"
 done
 
+END_TIME=$(date +%s)
+FINISHED_AT=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+TOTAL_WALL_TIME_SECONDS=$((END_TIME - START_TIME))
+
 cat >> "$RESULTS_FILE" <<EOF
 
-  ]
+  ],
+  "finished_at": "$FINISHED_AT",
+  "total_wall_time_seconds": $TOTAL_WALL_TIME_SECONDS
 }
 EOF
 
