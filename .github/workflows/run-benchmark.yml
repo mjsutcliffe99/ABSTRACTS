@@ -45,7 +45,9 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i aws_key.pem ubuntu@${{ secrets.AWS_HOST }} << 'EOF'
             set -e
             cd ~/ABSTRACTS
-            git pull origin main
+            git fetch origin main
+            git reset --hard origin/main
+            git clean -fd
             source .venv/bin/activate
             ./run_method.sh "${{ github.event.inputs.method }}" "${{ github.event.inputs.benchmark_dir }}"
           EOF
