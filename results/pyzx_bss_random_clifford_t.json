@@ -1,0 +1,45 @@
+{
+  "method": "pyzx_bss",
+  "benchmark_set": "circuits/random_clifford_t",
+  "runs": [
+    {
+      "benchmark": "rct_q10_d51_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d51_sigInf_s1.qasm",
+      "status": "success",
+      "exit_status": 0,
+      "result": "(-0.00605567395193018-0.018525940184059828j)",
+      "wall_time": "0:01.60",
+      "user_time_seconds": 0.98,
+      "system_time_seconds": 0.09,
+      "cpu_time_seconds": 1.07,
+      "peak_memory_kb": 76888
+    }
+,
+    {
+      "benchmark": "rct_q10_d56_sigInf_s3.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d56_sigInf_s3.qasm",
+      "status": "success",
+      "exit_status": 0,
+      "result": "(0.024287165708094794-0.04200409502814465j)",
+      "wall_time": "0:01.20",
+      "user_time_seconds": 1.23,
+      "system_time_seconds": 0.07,
+      "cpu_time_seconds": 1.3,
+      "peak_memory_kb": 77956
+    }
+,
+    {
+      "benchmark": "rct_q10_d69_sigInf_s2.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d69_sigInf_s2.qasm",
+      "status": "success",
+      "exit_status": 0,
+      "result": "(-0.02438531518406018+0.008760315184059859j)",
+      "wall_time": "0:00.76",
+      "user_time_seconds": 0.81,
+      "system_time_seconds": 0.06,
+      "cpu_time_seconds": 0.8700000000000001,
+      "peak_memory_kb": 76788
+    }
+
+  ]
+}
