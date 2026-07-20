@@ -7,12 +7,12 @@
       "benchmark_file": "circuits/test/test_seed_1.txt",
       "status": "success",
       "exit_status": 0,
-      "result": "(-0.0013404130879204705+0.04715260864010003j)",
-      "wall_time": "0:01.82",
-      "user_time_seconds": 1.20,
-      "system_time_seconds": 0.10,
-      "cpu_time_seconds": 1.3,
-      "peak_memory_kb": 77164
+      "result": "(-0.0013404130879202474+0.047152608640100103j)",
+      "wall_time": "0:01.86",
+      "user_time_seconds": 1.24,
+      "system_time_seconds": 0.08,
+      "cpu_time_seconds": 1.32,
+      "peak_memory_kb": 77528
     }
 ,
     {
@@ -20,12 +20,12 @@
       "benchmark_file": "circuits/test/test_seed_2.txt",
       "status": "success",
       "exit_status": 0,
-      "result": "(0.021218673888045183+0.035601410276089505j)",
-      "wall_time": "0:02.19",
-      "user_time_seconds": 2.24,
-      "system_time_seconds": 0.05,
-      "cpu_time_seconds": 2.29,
-      "peak_memory_kb": 80116
+      "result": "(0.02121867388804481+0.035601410276089804j)",
+      "wall_time": "0:02.04",
+      "user_time_seconds": 2.08,
+      "system_time_seconds": 0.06,
+      "cpu_time_seconds": 2.14,
+      "peak_memory_kb": 80032
     }
 ,
     {
@@ -33,12 +33,12 @@
       "benchmark_file": "circuits/test/test_seed_3.txt",
       "status": "success",
       "exit_status": 0,
-      "result": "(0.032216654165084575+0.02773747518852793j)",
-      "wall_time": "1:08.82",
-      "user_time_seconds": 68.74,
-      "system_time_seconds": 0.17,
-      "cpu_time_seconds": 68.91,
-      "peak_memory_kb": 228528
+      "result": "(0.03221665416508417+0.027737475188527906j)",
+      "wall_time": "1:06.53",
+      "user_time_seconds": 66.43,
+      "system_time_seconds": 0.19,
+      "cpu_time_seconds": 66.62,
+      "peak_memory_kb": 223068
     }
 
   ]
