@@ -17,7 +17,7 @@ echo "  \"runs\": ["
 
 FIRST=true
 
-for BENCHMARK_FILE in "$BENCHMARK_DIR"/*; do
+for BENCHMARK_FILE in "$BENCHMARK_DIR"/*.qasm; do
     BENCHMARK_NAME=$(basename "$BENCHMARK_FILE")
     TIME_FILE=$(mktemp)
     STDOUT_FILE=$(mktemp)

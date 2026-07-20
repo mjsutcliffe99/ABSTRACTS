@@ -1,0 +1,35 @@
+{
+    "name": "rct_q10_d56_sigInf_s3",
+    "file": "rct_q10_d56_sigInf_s3.qasm",
+    "provenance": {
+        "generator": "pyzx.generate.cliffordT",
+        "version": "0.10.4",
+        "parameters": {
+            "qubits": 10,
+            "depth": 250,
+            "seed": 3,
+            "sigma": "None"
+        },
+        "description": "pyzx[0.10.4].generate.cliffordT(qubits=10, depth=250, seed=3, sigma=None)"
+    },
+    "metrics": {
+        "qubits": 10,
+        "depth": 56,
+        "sigma": "Inf",
+        "t_count": 65,
+        "gate_count": 250,
+        "cnot_count": 62,
+        "had_count": 0
+    },
+    "derived_metrics": {
+        "pyzx": {
+            "version": "0.10.4",
+            "full_reduce_t_count": 37,
+            "plugged_full_reduce_t_count": 21
+        }
+    },
+    "amplitude": {
+        "real": 0.024287165708094506,
+        "imag": -0.042004095028144256
+    }
+}

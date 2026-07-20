@@ -4,14 +4,13 @@ from pyzx.simulation import Strategy
 
 def run(circuit_file: str):
     with open(circuit_file, "r") as f:
-        seed = int(f.read().strip()) #TEMP (for now, just read a seed rather than a circuit)
-        print("seed:",seed) #TEMP
-    q, d = 10, 300
-    g = zx.generate.cliffordT(qubits=q,depth=d,seed=seed)
+        qasm = f.read()
+    g = zx.qasm(qasm)
+    q = g.qubits
+    g = g.to_graph()
     g.apply_state("0"*q)
     g.apply_effect("0"*q)
     zx.simplify.full_reduce(g)
-
     return zx.simulation.simulate(Strategy.BSS, g)
 
 def main():

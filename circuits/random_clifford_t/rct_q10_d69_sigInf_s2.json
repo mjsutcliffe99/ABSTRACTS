@@ -1,0 +1,35 @@
+{
+    "name": "rct_q10_d69_sigInf_s2",
+    "file": "rct_q10_d69_sigInf_s2.qasm",
+    "provenance": {
+        "generator": "pyzx.generate.cliffordT",
+        "version": "0.10.4",
+        "parameters": {
+            "qubits": 10,
+            "depth": 250,
+            "seed": 2,
+            "sigma": "None"
+        },
+        "description": "pyzx[0.10.4].generate.cliffordT(qubits=10, depth=250, seed=2, sigma=None)"
+    },
+    "metrics": {
+        "qubits": 10,
+        "depth": 69,
+        "sigma": "Inf",
+        "t_count": 52,
+        "gate_count": 250,
+        "cnot_count": 59,
+        "had_count": 0
+    },
+    "derived_metrics": {
+        "pyzx": {
+            "version": "0.10.4",
+            "full_reduce_t_count": 24,
+            "plugged_full_reduce_t_count": 15
+        }
+    },
+    "amplitude": {
+        "real": -0.02438531518405968,
+        "imag": 0.008760315184059717
+    }
+}
