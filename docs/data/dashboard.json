@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-23T12:00:00Z",
+
+  "simulators": {
+    "pyzx_bss": {
+      "display_name": "PyZX BSS",
+      "language": "python",
+      "implementation": "PyZX",
+      "simulation_type": "strong",
+      "accuracy_type": "exact",
+      "accelerator": "cpu"
+    },
+
+    "pyzx_magic_cat": {
+      "display_name": "PyZX Magic Cat",
+      "language": "python",
+      "implementation": "PyZX",
+      "simulation_type": "strong",
+      "accuracy_type": "exact",
+      "accelerator": "cpu"
+    },
+
+    "rust_sim": {
+      "display_name": "Example Rust Simulator",
+      "language": "rust",
+      "implementation": "Native",
+      "simulation_type": "strong",
+      "accuracy_type": "approximate",
+      "accelerator": "cpu"
+    }
+  },
+
+  "circuits": {
+    "ccz_q10_n2_seed1": {
+      "display_name": "CCZ q10 n2 seed1",
+      "circuit_class": "ccz",
+      "benchmark_set": "ccz_scaling",
+      "qubits": 10,
+      "depth": 40,
+      "gate_count": 120,
+      "t_count": 14,
+      "ccz_count": 2,
+      "seed": 1
+    },
+
+    "ccz_q10_n4_seed2": {
+      "display_name": "CCZ q10 n4 seed2",
+      "circuit_class": "ccz",
+      "benchmark_set": "ccz_scaling",
+      "qubits": 10,
+      "depth": 68,
+      "gate_count": 190,
+      "t_count": 28,
+      "ccz_count": 4,
+      "seed": 2
+    },
+
+    "ccz_q10_n8_seed3": {
+      "display_name": "CCZ q10 n8 seed3",
+      "circuit_class": "ccz",
+      "benchmark_set": "ccz_scaling",
+      "qubits": 10,
+      "depth": 118,
+      "gate_count": 330,
+      "t_count": 56,
+      "ccz_count": 8,
+      "seed": 3
+    },
+
+    "random_q12_d100_seed1": {
+      "display_name": "Random Clifford+T q12 d100 seed1",
+      "circuit_class": "random_clifford_t",
+      "benchmark_set": "random_clifford_t",
+      "qubits": 12,
+      "depth": 100,
+      "gate_count": 410,
+      "t_count": 20,
+      "ccz_count": 0,
+      "seed": 1
+    },
+
+    "random_q12_d200_seed2": {
+      "display_name": "Random Clifford+T q12 d200 seed2",
+      "circuit_class": "random_clifford_t",
+      "benchmark_set": "random_clifford_t",
+      "qubits": 12,
+      "depth": 200,
+      "gate_count": 790,
+      "t_count": 43,
+      "ccz_count": 0,
+      "seed": 2
+    },
+
+    "qaoa_q14_p1_seed1": {
+      "display_name": "QAOA q14 p1 seed1",
+      "circuit_class": "qaoa",
+      "benchmark_set": "qaoa",
+      "qubits": 14,
+      "depth": 72,
+      "gate_count": 260,
+      "t_count": 32,
+      "ccz_count": 0,
+      "seed": 1
+    }
+  },
+
+  "records": [
+    {
+      "circuit_id": "ccz_q10_n2_seed1",
+      "simulator_id": "pyzx_bss",
+      "status": "success",
+      "wall_time_seconds": 0.75,
+      "cpu_time_seconds": 0.71,
+      "peak_memory_kb": 62000,
+      "absolute_error": 0.0
+    },
+    {
+      "circuit_id": "ccz_q10_n4_seed2",
+      "simulator_id": "pyzx_bss",
+      "status": "success",
+      "wall_time_seconds": 2.1,
+      "cpu_time_seconds": 2.03,
+      "peak_memory_kb": 73500,
+      "absolute_error": 0.0
+    },
+    {
+      "circuit_id": "ccz_q10_n8_seed3",
+      "simulator_id": "pyzx_bss",
+      "status": "success",
+      "wall_time_seconds": 11.8,
+      "cpu_time_seconds": 11.5,
+      "peak_memory_kb": 108000,
+      "absolute_error": 0.0
+    },
+
+    {
+      "circuit_id": "random_q12_d100_seed1",
+      "simulator_id": "pyzx_bss",
+      "status": "success",
+      "wall_time_seconds": 1.89,
+      "cpu_time_seconds": 1.82,
+      "peak_memory_kb": 76620,
+      "absolute_error": 0.0
+    },
+    {
+      "circuit_id": "random_q12_d200_seed2",
+      "simulator_id": "pyzx_bss",
+      "status": "success",
+      "wall_time_seconds": 9.6,
+      "cpu_time_seconds": 9.3,
+      "peak_memory_kb": 99000,
+      "absolute_error": 0.0
+    },
+    {
+      "circuit_id": "qaoa_q14_p1_seed1",
+      "simulator_id": "pyzx_bss",
+      "status": "success",
+      "wall_time_seconds": 4.7,
+      "cpu_time_seconds": 4.5,
+      "peak_memory_kb": 87000,
+      "absolute_error": 0.0
+    },
+
+    {
+      "circuit_id": "ccz_q10_n2_seed1",
+      "simulator_id": "pyzx_magic_cat",
+      "status": "success",
+      "wall_time_seconds": 0.52,
+      "cpu_time_seconds": 0.49,
+      "peak_memory_kb": 69000,
+      "absolute_error": 0.0
+    },
+    {
+      "circuit_id": "ccz_q10_n4_seed2",
+      "simulator_id": "pyzx_magic_cat",
+      "status": "success",
+      "wall_time_seconds": 1.4,
+      "cpu_time_seconds": 1.34,
+      "peak_memory_kb": 81000,
+      "absolute_error": 0.0
+    },
+    {
+      "circuit_id": "ccz_q10_n8_seed3",
+      "simulator_id": "pyzx_magic_cat",
+      "status": "success",
+      "wall_time_seconds": 7.1,
+      "cpu_time_seconds": 6.9,
+      "peak_memory_kb": 124000,
+      "absolute_error": 0.0
+    },
+
+    {
+      "circuit_id": "random_q12_d100_seed1",
+      "simulator_id": "pyzx_magic_cat",
+      "status": "success",
+      "wall_time_seconds": 1.22,
+      "cpu_time_seconds": 1.18,
+      "peak_memory_kb": 83500,
+      "absolute_error": 0.0
+    },
+    {
+      "circuit_id": "random_q12_d200_seed2",
+      "simulator_id": "pyzx_magic_cat",
+      "status": "success",
+      "wall_time_seconds": 6.4,
+      "cpu_time_seconds": 6.2,
+      "peak_memory_kb": 116000,
+      "absolute_error": 0.0
+    },
+    {
+      "circuit_id": "qaoa_q14_p1_seed1",
+      "simulator_id": "pyzx_magic_cat",
+      "status": "success",
+      "wall_time_seconds": 3.3,
+      "cpu_time_seconds": 3.2,
+      "peak_memory_kb": 104000,
+      "absolute_error": 0.0
+    },
+
+    {
+      "circuit_id": "ccz_q10_n2_seed1",
+      "simulator_id": "rust_sim",
+      "status": "success",
+      "wall_time_seconds": 0.31,
+      "cpu_time_seconds": 0.29,
+      "peak_memory_kb": 41000,
+      "absolute_error": 0.000002
+    },
+    {
+      "circuit_id": "ccz_q10_n4_seed2",
+      "simulator_id": "rust_sim",
+      "status": "success",
+      "wall_time_seconds": 0.82,
+      "cpu_time_seconds": 0.79,
+      "peak_memory_kb": 48000,
+      "absolute_error": 0.000004
+    },
+    {
+      "circuit_id": "ccz_q10_n8_seed3",
+      "simulator_id": "rust_sim",
+      "status": "success",
+      "wall_time_seconds": 3.8,
+      "cpu_time_seconds": 3.7,
+      "peak_memory_kb": 65000,
+      "absolute_error": 0.000011
+    },
+
+    {
+      "circuit_id": "random_q12_d100_seed1",
+      "simulator_id": "rust_sim",
+      "status": "success",
+      "wall_time_seconds": 0.74,
+      "cpu_time_seconds": 0.7,
+      "peak_memory_kb": 53000,
+      "absolute_error": 0.000006
+    },
+    {
+      "circuit_id": "random_q12_d200_seed2",
+      "simulator_id": "rust_sim",
+      "status": "success",
+      "wall_time_seconds": 3.2,
+      "cpu_time_seconds": 3.1,
+      "peak_memory_kb": 68000,
+      "absolute_error": 0.000013
+    },
+    {
+      "circuit_id": "qaoa_q14_p1_seed1",
+      "simulator_id": "rust_sim",
+      "status": "success",
+      "wall_time_seconds": 1.9,
+      "cpu_time_seconds": 1.84,
+      "peak_memory_kb": 61000,
+      "absolute_error": 0.000009
+    }
+  ]
+}
