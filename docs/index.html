@@ -1,32 +1,714 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <title>Sample Plot</title>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>ABSTRACTS Benchmark Explorer</title>
+
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+
+  <style>
+    :root {
+      font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      color: #202124;
+      background: #f5f7fa;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    header {
+      padding: 24px max(24px, calc((100% - 1400px) / 2));
+      color: white;
+      background: #172554;
+    }
+
+    header h1 {
+      margin: 0 0 6px;
+      font-size: 1.8rem;
+    }
+
+    header p {
+      margin: 0;
+      color: #dbeafe;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 290px minmax(0, 1fr);
+      gap: 20px;
+
+      width: min(1400px, calc(100% - 32px));
+      margin: 20px auto;
+    }
+
+    .panel {
+      padding: 18px;
+      background: white;
+      border: 1px solid #dfe3e8;
+      border-radius: 10px;
+    }
+
+    .controls {
+      align-self: start;
+    }
+
+    .control-group {
+      margin-bottom: 20px;
+    }
+
+    .control-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .control-group h2 {
+      margin: 0 0 10px;
+      font-size: 1rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    select {
+      width: 100%;
+      margin-bottom: 12px;
+      padding: 9px;
+
+      color: inherit;
+      background: white;
+      border: 1px solid #c7cdd4;
+      border-radius: 6px;
+    }
+
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 7px 0;
+    }
+
+    .checkbox-row label {
+      margin: 0;
+      font-weight: 400;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    button {
+      padding: 8px 11px;
+      cursor: pointer;
+
+      color: #172554;
+      background: #eff6ff;
+      border: 1px solid #93c5fd;
+      border-radius: 6px;
+    }
+
+    button:hover {
+      background: #dbeafe;
+    }
+
+    #plot {
+      width: 100%;
+      height: 680px;
+    }
+
+    #status {
+      min-height: 1.4em;
+      margin: 0 0 8px;
+      color: #5f6368;
+      font-size: 0.9rem;
+    }
+
+    .summary {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 10px;
+      color: #5f6368;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 850px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      #plot {
+        height: 540px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Clifford+T Simulator Benchmarks</h1>
+  <header>
+    <h1>ABSTRACTS Benchmark Explorer</h1>
+    <p>Interactive results for classical quantum circuit simulators</p>
+  </header>
 
-  <div id="plot" style="width: 900px; height: 500px;"></div>
+  <main>
+    <aside class="panel controls">
+      <div class="control-group">
+        <h2>Axes</h2>
+
+        <label for="x-axis">X-axis</label>
+        <select id="x-axis"></select>
+
+        <label for="y-axis">Y-axis</label>
+        <select id="y-axis"></select>
+
+        <label for="x-scale">X-axis scale</label>
+        <select id="x-scale">
+          <option value="linear">Linear</option>
+          <option value="log">Logarithmic</option>
+        </select>
+
+        <label for="y-scale">Y-axis scale</label>
+        <select id="y-scale">
+          <option value="linear">Linear</option>
+          <option value="log" selected>Logarithmic</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <h2>Circuit classes</h2>
+
+        <div id="circuit-class-controls"></div>
+
+        <div class="button-row">
+          <button id="select-all-circuits" type="button">
+            Select all
+          </button>
+
+          <button id="clear-circuits" type="button">
+            Clear
+          </button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <h2>Simulator language</h2>
+
+        <label for="language-filter">Language</label>
+        <select id="language-filter">
+          <option value="all">All languages</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <h2>Simulators</h2>
+
+        <div id="simulator-controls"></div>
+
+        <div class="button-row">
+          <button id="select-all-simulators" type="button">
+            Select all
+          </button>
+
+          <button id="clear-simulators" type="button">
+            Clear
+          </button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <button id="reset-controls" type="button">
+          Reset filters
+        </button>
+      </div>
+    </aside>
+
+    <section class="panel">
+      <p id="status">Loading benchmark data…</p>
+
+      <div class="summary">
+        <span id="result-count"></span>
+        <span id="generated-at"></span>
+      </div>
+
+      <div id="plot"></div>
+    </section>
+  </main>
 
   <script>
-    const data = [
-      {
-        x: ["test_seed_1", "test_seed_2", "test_seed_3"],
-        y: [1.89, 2.03, 71.58],
-        type: "bar",
-        name: "pyzx_bss"
+    const AXIS_FIELDS = {
+      qubits: {
+        label: "Qubit count",
+        source: "circuit"
+      },
+      depth: {
+        label: "Circuit depth",
+        source: "circuit"
+      },
+      gate_count: {
+        label: "Gate count",
+        source: "circuit"
+      },
+      t_count: {
+        label: "T-count",
+        source: "circuit"
+      },
+      ccz_count: {
+        label: "CCZ count",
+        source: "circuit"
+      },
+      wall_time_seconds: {
+        label: "Wall time (seconds)",
+        source: "record"
+      },
+      cpu_time_seconds: {
+        label: "CPU time (seconds)",
+        source: "record"
+      },
+      peak_memory_kb: {
+        label: "Peak memory (KB)",
+        source: "record"
+      },
+      absolute_error: {
+        label: "Absolute error",
+        source: "record"
       }
-    ];
-
-    const layout = {
-      title: "Wall time per benchmark",
-      xaxis: { title: "Benchmark" },
-      yaxis: { title: "Wall time, seconds" }
     };
 
-    Plotly.newPlot("plot", data, layout);
+    let dashboardData = null;
+
+    const xAxisSelect = document.getElementById("x-axis");
+    const yAxisSelect = document.getElementById("y-axis");
+    const xScaleSelect = document.getElementById("x-scale");
+    const yScaleSelect = document.getElementById("y-scale");
+
+    const languageFilter = document.getElementById("language-filter");
+
+    const circuitClassControls = document.getElementById(
+      "circuit-class-controls"
+    );
+
+    const simulatorControls = document.getElementById(
+      "simulator-controls"
+    );
+
+    const statusElement = document.getElementById("status");
+    const resultCountElement = document.getElementById("result-count");
+    const generatedAtElement = document.getElementById("generated-at");
+
+    function fillAxisSelect(selectElement, selectedField) {
+      selectElement.replaceChildren();
+
+      for (const [field, metadata] of Object.entries(AXIS_FIELDS)) {
+        const option = document.createElement("option");
+
+        option.value = field;
+        option.textContent = metadata.label;
+        option.selected = field === selectedField;
+
+        selectElement.appendChild(option);
+      }
+    }
+
+    function makeCheckbox(container, groupName, value, labelText) {
+      const row = document.createElement("div");
+      row.className = "checkbox-row";
+
+      const checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.name = groupName;
+      checkbox.value = value;
+      checkbox.id = `${groupName}-${value}`;
+      checkbox.checked = true;
+
+      const label = document.createElement("label");
+      label.htmlFor = checkbox.id;
+      label.textContent = labelText;
+
+      checkbox.addEventListener("change", updatePlot);
+
+      row.append(checkbox, label);
+      container.appendChild(row);
+    }
+
+    function initialiseControls() {
+      fillAxisSelect(xAxisSelect, "t_count");
+      fillAxisSelect(yAxisSelect, "wall_time_seconds");
+
+      const circuitClasses = [
+        ...new Set(
+          Object.values(dashboardData.circuits).map(
+            circuit => circuit.circuit_class
+          )
+        )
+      ].sort();
+
+      circuitClassControls.replaceChildren();
+
+      for (const circuitClass of circuitClasses) {
+        makeCheckbox(
+          circuitClassControls,
+          "circuit-class",
+          circuitClass,
+          circuitClass
+        );
+      }
+
+      const languages = [
+        ...new Set(
+          Object.values(dashboardData.simulators).map(
+            simulator => simulator.language
+          )
+        )
+      ].sort();
+
+      languageFilter.replaceChildren();
+
+      const allLanguagesOption = document.createElement("option");
+      allLanguagesOption.value = "all";
+      allLanguagesOption.textContent = "All languages";
+      languageFilter.appendChild(allLanguagesOption);
+
+      for (const language of languages) {
+        const option = document.createElement("option");
+        option.value = language;
+        option.textContent = language;
+        languageFilter.appendChild(option);
+      }
+
+      simulatorControls.replaceChildren();
+
+      for (const [simulatorId, simulator] of Object.entries(
+        dashboardData.simulators
+      )) {
+        makeCheckbox(
+          simulatorControls,
+          "simulator",
+          simulatorId,
+          `${simulator.display_name} (${simulator.language})`
+        );
+      }
+    }
+
+    function getCheckedValues(name) {
+      return new Set(
+        [...document.querySelectorAll(`input[name="${name}"]:checked`)]
+          .map(input => input.value)
+      );
+    }
+
+    function setAllCheckboxes(name, checked) {
+      for (const input of document.querySelectorAll(
+        `input[name="${name}"]`
+      )) {
+        input.checked = checked;
+      }
+
+      updatePlot();
+    }
+
+    function getAxisValue(record, circuit, field) {
+      const fieldMetadata = AXIS_FIELDS[field];
+
+      if (fieldMetadata.source === "circuit") {
+        return circuit[field];
+      }
+
+      return record[field];
+    }
+
+    function expandedSuccessfulRecords() {
+      return dashboardData.records
+        .filter(record => record.status === "success")
+        .map(record => {
+          const circuit = dashboardData.circuits[record.circuit_id];
+          const simulator =
+            dashboardData.simulators[record.simulator_id];
+
+          return {
+            record,
+            circuit,
+            simulator
+          };
+        });
+    }
+
+    function updatePlot() {
+      if (!dashboardData) {
+        return;
+      }
+
+      const xField = xAxisSelect.value;
+      const yField = yAxisSelect.value;
+
+      const selectedCircuitClasses = getCheckedValues("circuit-class");
+      const selectedSimulators = getCheckedValues("simulator");
+
+      const selectedLanguage = languageFilter.value;
+
+      const filtered = expandedSuccessfulRecords().filter(item => {
+        const correctCircuitClass = selectedCircuitClasses.has(
+          item.circuit.circuit_class
+        );
+
+        const correctSimulator = selectedSimulators.has(
+          item.record.simulator_id
+        );
+
+        const correctLanguage =
+          selectedLanguage === "all" ||
+          item.simulator.language === selectedLanguage;
+
+        const xValue = getAxisValue(
+          item.record,
+          item.circuit,
+          xField
+        );
+
+        const yValue = getAxisValue(
+          item.record,
+          item.circuit,
+          yField
+        );
+
+        const hasValidValues =
+          Number.isFinite(xValue) &&
+          Number.isFinite(yValue);
+
+        const validForLogX =
+          xScaleSelect.value !== "log" || xValue > 0;
+
+        const validForLogY =
+          yScaleSelect.value !== "log" || yValue > 0;
+
+        return (
+          correctCircuitClass &&
+          correctSimulator &&
+          correctLanguage &&
+          hasValidValues &&
+          validForLogX &&
+          validForLogY
+        );
+      });
+
+      const simulatorIds = [
+        ...new Set(
+          filtered.map(item => item.record.simulator_id)
+        )
+      ];
+
+      const traces = simulatorIds.map(simulatorId => {
+        const simulator = dashboardData.simulators[simulatorId];
+
+        const simulatorRecords = filtered
+          .filter(item => item.record.simulator_id === simulatorId)
+          .sort((a, b) => {
+            const aValue = getAxisValue(
+              a.record,
+              a.circuit,
+              xField
+            );
+
+            const bValue = getAxisValue(
+              b.record,
+              b.circuit,
+              xField
+            );
+
+            return aValue - bValue;
+          });
+
+        return {
+          name: simulator.display_name,
+          type: "scatter",
+          mode: "markers",
+
+          x: simulatorRecords.map(item =>
+            getAxisValue(item.record, item.circuit, xField)
+          ),
+
+          y: simulatorRecords.map(item =>
+            getAxisValue(item.record, item.circuit, yField)
+          ),
+
+          text: simulatorRecords.map(item =>
+            [
+              `<b>${item.circuit.display_name}</b>`,
+              `Circuit class: ${item.circuit.circuit_class}`,
+              `Simulator: ${item.simulator.display_name}`,
+              `Language: ${item.simulator.language}`,
+              `Qubits: ${item.circuit.qubits}`,
+              `Depth: ${item.circuit.depth}`,
+              `Gate count: ${item.circuit.gate_count}`,
+              `T-count: ${item.circuit.t_count}`,
+              `Wall time: ${item.record.wall_time_seconds} s`,
+              `Peak memory: ${item.record.peak_memory_kb} KB`
+            ].join("<br>")
+          ),
+
+          hovertemplate:
+            "%{text}<extra></extra>",
+
+          marker: {
+            size: 10,
+            opacity: 0.8
+          }
+        };
+      });
+
+      const layout = {
+        title: {
+          text:
+            `${AXIS_FIELDS[yField].label} vs ` +
+            AXIS_FIELDS[xField].label
+        },
+
+        xaxis: {
+          title: AXIS_FIELDS[xField].label,
+          type: xScaleSelect.value,
+          automargin: true
+        },
+
+        yaxis: {
+          title: AXIS_FIELDS[yField].label,
+          type: yScaleSelect.value,
+          automargin: true
+        },
+
+        legend: {
+          title: {
+            text: "Simulator"
+          }
+        },
+
+        hovermode: "closest",
+
+        margin: {
+          l: 80,
+          r: 30,
+          t: 70,
+          b: 70
+        }
+      };
+
+      const config = {
+        responsive: true,
+        displaylogo: false
+      };
+
+      Plotly.react("plot", traces, layout, config);
+
+      resultCountElement.textContent =
+        `${filtered.length} result${filtered.length === 1 ? "" : "s"}`;
+
+      if (filtered.length === 0) {
+        statusElement.textContent =
+          "No results match the selected filters.";
+      } else {
+        statusElement.textContent = "";
+      }
+    }
+
+    function resetControls() {
+      xAxisSelect.value = "t_count";
+      yAxisSelect.value = "wall_time_seconds";
+      xScaleSelect.value = "linear";
+      yScaleSelect.value = "log";
+      languageFilter.value = "all";
+
+      for (const input of document.querySelectorAll(
+        'input[type="checkbox"]'
+      )) {
+        input.checked = true;
+      }
+
+      updatePlot();
+    }
+
+    async function loadDashboard() {
+      try {
+        const response = await fetch("./data/dashboard.json");
+
+        if (!response.ok) {
+          throw new Error(
+            `HTTP ${response.status}: ${response.statusText}`
+          );
+        }
+
+        dashboardData = await response.json();
+
+        initialiseControls();
+
+        generatedAtElement.textContent =
+          `Generated ${new Date(
+            dashboardData.generated_at
+          ).toLocaleString()}`;
+
+        updatePlot();
+      } catch (error) {
+        console.error(error);
+
+        statusElement.textContent =
+          `Failed to load benchmark data: ${error.message}`;
+      }
+    }
+
+    xAxisSelect.addEventListener("change", updatePlot);
+    yAxisSelect.addEventListener("change", updatePlot);
+    xScaleSelect.addEventListener("change", updatePlot);
+    yScaleSelect.addEventListener("change", updatePlot);
+    languageFilter.addEventListener("change", updatePlot);
+
+    document
+      .getElementById("select-all-circuits")
+      .addEventListener("click", () => {
+        setAllCheckboxes("circuit-class", true);
+      });
+
+    document
+      .getElementById("clear-circuits")
+      .addEventListener("click", () => {
+        setAllCheckboxes("circuit-class", false);
+      });
+
+    document
+      .getElementById("select-all-simulators")
+      .addEventListener("click", () => {
+        setAllCheckboxes("simulator", true);
+      });
+
+    document
+      .getElementById("clear-simulators")
+      .addEventListener("click", () => {
+        setAllCheckboxes("simulator", false);
+      });
+
+    document
+      .getElementById("reset-controls")
+      .addEventListener("click", resetControls);
+
+    loadDashboard();
   </script>
 </body>
 </html>
