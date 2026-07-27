@@ -1,0 +1,50 @@
+name: Build dashboard data
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+    paths:
+      - "results/**"
+      - "circuits/**/*.json"
+      - "simulators.json"
+      - "scripts/build_dashboard_data.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-dashboard-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-dashboard:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Build dashboard JSON
+        run: python scripts/build_dashboard_data.py
+
+      - name: Commit generated dashboard
+        run: |
+          if git diff --quiet -- docs/data/dashboard.json; then
+            echo "Dashboard data is already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add docs/data/dashboard.json
+          git commit -m "Update dashboard data"
+          git push
