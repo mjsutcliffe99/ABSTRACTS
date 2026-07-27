@@ -11,7 +11,7 @@ def run(circuit_file: str):
     g.apply_state("0"*q)
     g.apply_effect("0"*q)
     zx.simplify.full_reduce(g)
-    return zx.simulation.simulate(Strategy.CUT_RANDOM, g)
+    return zx.simulation.simulate(Strategy.BSS, g)
 
 def main():
     #if len(sys.argv) != 2:
