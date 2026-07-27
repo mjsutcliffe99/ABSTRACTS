@@ -1,0 +1,9 @@
+{
+  "display_name": "PyZX BSS",
+  "language": "python",
+  "implementation": "PyZX",
+  "simulation_type": "strong",
+  "accuracy_type": "exact",
+  "accelerator": "cpu",
+  "repository": "https://github.com/zxcalc/pyzx"
+}

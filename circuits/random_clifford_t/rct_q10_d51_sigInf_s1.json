@@ -1,6 +1,8 @@
 {
-    "name": "rct_q10_d51_sigInf_s1",
+    "display_name": "rct_q10_d51_sigInf_s1",
     "file": "rct_q10_d51_sigInf_s1.qasm",
+    "circuit_class": "random_clifford_t",
+    "benchmark_set": "random_clifford_t",
     "provenance": {
         "generator": "pyzx.generate.cliffordT",
         "version": "0.10.4",
