@@ -1,0 +1,49 @@
+{
+  "method": "pyzx_bss",
+  "benchmark_set": "circuits/random_clifford_t",
+  "started_at": "2026-07-27T20:20:21Z",
+  "git_commit": "18551bbfe443b347dc61c52b3bdbb703224e065a",
+  "runs": [
+    {
+      "benchmark": "rct_q10_d51_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d51_sigInf_s1.qasm",
+      "status": "success",
+      "exit_status": 0,
+      "result": "(-0.0060556739519301945-0.0185259401840599j)",
+      "wall_time": "0:01.60",
+      "user_time_seconds": 0.95,
+      "system_time_seconds": 0.10,
+      "cpu_time_seconds": 1.05,
+      "peak_memory_kb": 76952
+    }
+,
+    {
+      "benchmark": "rct_q10_d56_sigInf_s3.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d56_sigInf_s3.qasm",
+      "status": "success",
+      "exit_status": 0,
+      "result": "(0.024287165708094506-0.042004095028144346j)",
+      "wall_time": "0:01.30",
+      "user_time_seconds": 1.28,
+      "system_time_seconds": 0.06,
+      "cpu_time_seconds": 1.34,
+      "peak_memory_kb": 78060
+    }
+,
+    {
+      "benchmark": "rct_q10_d69_sigInf_s2.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d69_sigInf_s2.qasm",
+      "status": "success",
+      "exit_status": 0,
+      "result": "(-0.024385315184059935+0.008760315184059555j)",
+      "wall_time": "0:00.80",
+      "user_time_seconds": 0.81,
+      "system_time_seconds": 0.06,
+      "cpu_time_seconds": 0.8700000000000001,
+      "peak_memory_kb": 76924
+    }
+
+  ],
+  "finished_at": "2026-07-27T20:20:25Z",
+  "total_wall_time_seconds": 4
+}
