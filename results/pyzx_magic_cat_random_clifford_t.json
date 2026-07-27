@@ -1,0 +1,49 @@
+{
+  "method": "pyzx_magic_cat",
+  "benchmark_set": "circuits/random_clifford_t",
+  "started_at": "2026-07-27T20:14:16Z",
+  "git_commit": "7032a3d30534163b5242463cba1529cd09da78bd",
+  "runs": [
+    {
+      "benchmark": "rct_q10_d51_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d51_sigInf_s1.qasm",
+      "status": "failed",
+      "exit_status": 126,
+      "result": "",
+      "wall_time": "0:00.00",
+      "user_time_seconds": 0.00,
+      "system_time_seconds": 0.00,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 7028
+    }
+,
+    {
+      "benchmark": "rct_q10_d56_sigInf_s3.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d56_sigInf_s3.qasm",
+      "status": "failed",
+      "exit_status": 126,
+      "result": "",
+      "wall_time": "0:00.00",
+      "user_time_seconds": 0.00,
+      "system_time_seconds": 0.00,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 7160
+    }
+,
+    {
+      "benchmark": "rct_q10_d69_sigInf_s2.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d69_sigInf_s2.qasm",
+      "status": "failed",
+      "exit_status": 126,
+      "result": "",
+      "wall_time": "0:00.00",
+      "user_time_seconds": 0.00,
+      "system_time_seconds": 0.00,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 7332
+    }
+
+  ],
+  "finished_at": "2026-07-27T20:14:17Z",
+  "total_wall_time_seconds": 1
+}
