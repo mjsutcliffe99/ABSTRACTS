@@ -19,16 +19,11 @@
         "depth": 56,
         "sigma": "Inf",
         "t_count": 65,
+        "pyzx_reduced_t_count": 37,
+        "pyzx_plugged_reduced_t_count": 21,
         "gate_count": 250,
         "cnot_count": 62,
         "had_count": 0
-    },
-    "derived_metrics": {
-        "pyzx": {
-            "version": "0.10.4",
-            "full_reduce_t_count": 37,
-            "plugged_full_reduce_t_count": 21
-        }
     },
     "amplitude": {
         "real": 0.024287165708094506,
