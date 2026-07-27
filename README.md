@@ -24,7 +24,7 @@ There is no strict limit on submission frequency per person and if you have mult
 </details>
 
 <details><summary><strong>What happens after I submit a simulator?</strong></summary>
-When a simulator is submitted for official benchmarking, it firstly undergoes a brief and shallow review to ensure it meets the specification and does not contain any malicious or cheating code. If approved, the PR will be accepted and the simulator added to the repo, which will trigger the automated benchmarking process. 
+When a simulator is submitted for official benchmarking, it firstly undergoes a brief and shallow review to ensure it meets the specification and does not contain any malicious or cheating code. If approved, the PR will be accepted and the simulator (or a simple wrapper thereof) added to the repo, which will trigger the automated benchmarking process. 
   
 This involves the following automated steps:
   - Configure the AWS credentials
@@ -34,6 +34,7 @@ This involves the following automated steps:
   - Execute the simulator for every circuit in the dataset and print the resulting measurements to a JSON file
   - Upon completion or timeout, commit and push this JSON file to the repo
   - Shut down the VM instance
+  - Run a script to aggregate the raw results data into a single reduced json file for plotting
   - Update the interactive plots on the repo to include the results of the new simulator
 </details>
 
