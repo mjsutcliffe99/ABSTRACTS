@@ -401,6 +401,20 @@ def build_circuit_entry(
         "T_count",
     )
 
+    pyzx_reduced_t_count = first_present(
+        metrics,
+        "pyzx_reduced_t_count",
+        "pyzx_reduced_tcount",
+        "pyzx_reduced_T_count",
+    )
+
+    pyzx_plugged_reduced_t_count = first_present(
+        metrics,
+        "pyzx_plugged_reduced_t_count",
+        "pyzx_plugged_reduced_tcount",
+        "pyzx_plugged_reduced_T_count",
+    )
+
     if circuit_class is None:
         raise DashboardBuildError(
             f"{metadata_path}: missing required field "
@@ -418,6 +432,8 @@ def build_circuit_entry(
         "depth": depth,
         "gate_count": gate_count,
         "t_count": t_count,
+        "pyzx_reduced_t_count": pyzx_reduced_t_count,
+        "pyzx_plugged_reduced_t_count": pyzx_plugged_reduced_t_count,
     }
 
     missing_fields = [
@@ -460,6 +476,16 @@ def build_circuit_entry(
         "t_count": number_or_none(
             t_count,
             field_name="metrics.t_count",
+            source=metadata_path,
+        ),
+        "pyzx_reduced_t_count": number_or_none(
+            pyzx_reduced_t_count,
+            field_name="metrics.pyzx_reduced_t_count",
+            source=metadata_path,
+        ),
+        "pyzx_plugged_reduced_t_count": number_or_none(
+            pyzx_plugged_reduced_t_count,
+            field_name="metrics.pyzx_plugged_reduced_t_count",
             source=metadata_path,
         ),
     }
