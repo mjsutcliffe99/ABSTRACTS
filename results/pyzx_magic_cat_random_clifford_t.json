@@ -1,8 +1,8 @@
 {
   "method": "pyzx_magic_cat",
   "benchmark_set": "circuits/random_clifford_t",
-  "started_at": "2026-07-27T20:41:20Z",
-  "git_commit": "2ea8edeadc5ce4a54959d428afcf3875f5660bb9",
+  "started_at": "2026-07-27T20:49:18Z",
+  "git_commit": "11bc971c138e423043f5277122e41400935cc3be",
   "runs": [
     {
       "benchmark": "rct_q10_d51_sigInf_s1.qasm",
@@ -14,7 +14,7 @@
       "user_time_seconds": 0.00,
       "system_time_seconds": 0.00,
       "cpu_time_seconds": 0.0,
-      "peak_memory_kb": 7088
+      "peak_memory_kb": 7296
     }
 ,
     {
@@ -27,7 +27,7 @@
       "user_time_seconds": 0.00,
       "system_time_seconds": 0.00,
       "cpu_time_seconds": 0.0,
-      "peak_memory_kb": 7100
+      "peak_memory_kb": 7072
     }
 ,
     {
@@ -40,10 +40,10 @@
       "user_time_seconds": 0.00,
       "system_time_seconds": 0.00,
       "cpu_time_seconds": 0.0,
-      "peak_memory_kb": 6996
+      "peak_memory_kb": 7044
     }
 
   ],
-  "finished_at": "2026-07-27T20:41:20Z",
+  "finished_at": "2026-07-27T20:49:18Z",
   "total_wall_time_seconds": 0
 }
