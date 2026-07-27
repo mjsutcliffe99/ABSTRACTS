@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-27T13:37:01Z",
+  "generated_at": "2026-07-27T13:49:14Z",
   "simulators": {
     "pyzx_bss": {
       "display_name": "PyZX BSS",
@@ -21,6 +21,8 @@
       "depth": 51,
       "gate_count": 250,
       "t_count": 69,
+      "pyzx_reduced_t_count": 33,
+      "pyzx_plugged_reduced_t_count": 18,
       "sigma": "Inf"
     },
     "rct_q10_d56_sigInf_s3": {
@@ -31,6 +33,8 @@
       "depth": 56,
       "gate_count": 250,
       "t_count": 65,
+      "pyzx_reduced_t_count": 37,
+      "pyzx_plugged_reduced_t_count": 21,
       "sigma": "Inf"
     },
     "rct_q10_d69_sigInf_s2": {
@@ -41,6 +45,8 @@
       "depth": 69,
       "gate_count": 250,
       "t_count": 52,
+      "pyzx_reduced_t_count": 24,
+      "pyzx_plugged_reduced_t_count": 15,
       "sigma": "Inf"
     }
   },
