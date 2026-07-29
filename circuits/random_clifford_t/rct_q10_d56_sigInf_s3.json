@@ -18,9 +18,8 @@
         "qubits": 10,
         "depth": 56,
         "sigma": "Inf",
-        "t_count": 65,
-        "pyzx_reduced_t_count": 37,
-        "pyzx_plugged_reduced_t_count": 21,
+        "t_count": 37,
+        "pyzx_reduced_t_count": 21,
         "gate_count": 250,
         "cnot_count": 62,
         "had_count": 0

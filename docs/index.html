@@ -282,10 +282,6 @@
         label: "Pyzx reduced T-count",
         source: "circuit"
       },
-      pyzx_plugged_reduced_t_count: {
-        label: "Pyzx plugged reduced T-count",
-        source: "circuit"
-      },
       ccz_count: {
         label: "CCZ count",
         source: "circuit"
@@ -575,8 +571,7 @@
               `Sigma: ${item.circuit.sigma}`,
               `Gate count: ${item.circuit.gate_count}`,
               `T-count: ${item.circuit.t_count}`,
-              `Pyzx T-count: ${item.circuit.pyzx_reduced_t_count}`,
-              `Pyzx plugged T-count: ${item.circuit.pyzx_plugged_reduced_t_count}`,
+              `Pyzx reduced T-count: ${item.circuit.pyzx_reduced_t_count}`,
               `Wall time: ${item.record.wall_time_seconds} s`,
               `Peak memory: ${item.record.peak_memory_kb} KB`
             ].join("<br>")
