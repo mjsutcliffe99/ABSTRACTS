@@ -1,0 +1,62 @@
+{
+  "method": "pyzx_magic_cat",
+  "benchmark_set": "circuits/random_clifford_t",
+  "started_at": "2026-07-30T00:18:18Z",
+  "git_commit": "f1d6e2fc333f050310c07934fed0e0fa5aa680a7",
+  "runs": [
+    {
+      "benchmark": "rct_q10_d107_sigInf_s3.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d107_sigInf_s3.qasm",
+      "status": "success",
+      "exit_status": 0,
+      "result": "(-0.031618571287079775+0.0013780910499689224j)",
+      "wall_time": "0:10.61",
+      "user_time_seconds": 9.95,
+      "system_time_seconds": 0.12,
+      "cpu_time_seconds": 10.069999999999999,
+      "peak_memory_kb": 91540
+    }
+,
+    {
+      "benchmark": "rct_q10_d50_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d50_sigInf_s1.qasm",
+      "status": "success",
+      "exit_status": 0,
+      "result": "(-0.00605567395193033-0.018525940184059696j)",
+      "wall_time": "0:00.80",
+      "user_time_seconds": 0.79,
+      "system_time_seconds": 0.06,
+      "cpu_time_seconds": 0.8500000000000001,
+      "peak_memory_kb": 76904
+    }
+,
+    {
+      "benchmark": "rct_q10_d56_sigInf_s3.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d56_sigInf_s3.qasm",
+      "status": "success",
+      "exit_status": 0,
+      "result": "(-0.012527760864009956-0.04687499999999993j)",
+      "wall_time": "0:00.90",
+      "user_time_seconds": 0.90,
+      "system_time_seconds": 0.06,
+      "cpu_time_seconds": 0.96,
+      "peak_memory_kb": 76976
+    }
+,
+    {
+      "benchmark": "rct_q10_d65_sigInf_s2.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d65_sigInf_s2.qasm",
+      "status": "success",
+      "exit_status": 0,
+      "result": "(-0.024385315184059682+0.008760315184059718j)",
+      "wall_time": "0:00.80",
+      "user_time_seconds": 0.76,
+      "system_time_seconds": 0.06,
+      "cpu_time_seconds": 0.8200000000000001,
+      "peak_memory_kb": 76812
+    }
+
+  ],
+  "finished_at": "2026-07-30T00:18:31Z",
+  "total_wall_time_seconds": 13
+}
