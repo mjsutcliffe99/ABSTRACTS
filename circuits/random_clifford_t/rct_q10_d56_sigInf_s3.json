@@ -20,12 +20,12 @@
         "sigma": "Inf",
         "t_count": 37,
         "pyzx_reduced_t_count": 21,
-        "gate_count": 250,
+        "gate_count": 235,
         "cnot_count": 62,
         "had_count": 0
     },
     "amplitude": {
-        "real": 0.024287165708094506,
-        "imag": -0.042004095028144256
+        "real": -0.012527760864009958,
+        "imag": -0.04687499999999993
     }
 }
