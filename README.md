@@ -19,6 +19,22 @@ Anyone is free to submit a simulator to be benchmarked on ABSTRACTS by submittin
 [TODO]
 </details>
 
+<details><summary><strong>What are the requirements for a submitted simulator?</strong></summary>
+Any simulator submitted for benchmarking requires only the following:
+  
+  - A main source file (in any language) containing a function which accepts as input a filepath to a circuit, C, in the form of a QASM string and returns the amplitude of <0...0|C|0...0>.
+  - A run.sh Shell wrapper script to call the above function.
+  - A metadata.json file containing useful information about the simulator.
+
+Additional files may be included if needed, and it methods/pyzx_bss provides a minimal example of the above which may be referenced as a template.
+
+Furthermore, while not required, the following design recommendations are encouraged:
+
+- For competitive performance results, it is recommended to implement your simulator is a high-performance programming language such as C++ or Rust, though for a more qualitative analysis of scaling, slower languages such as Python are sufficient.
+- Simulators that rely on some degree of randomness are encouraged to explicitly set a fixed seed at the start for better reproducibility.
+
+</details>
+
 <details><summary><strong>How often can I make a submission?</strong></summary>
 There is no strict limit on submission frequency per person and if you have multiple techniques you wish to simulate we encourage you to submit each one. However, we ask users not to frequently resubmit their simulators with incremental changes. Instead, for simulators still undergoing optimisation, developers are encouraged to download the benchmark dataset and experiment locally before making a final submission for official benchmarking when ready.
 </details>
