@@ -1,0 +1,31 @@
+{
+    "display_name": "rct_q20_d60_sig0_s1",
+    "file": "rct_q20_d60_sig0_s1.qasm",
+    "circuit_class": "random_clifford_t",
+    "benchmark_set": "random_clifford_t",
+    "provenance": {
+        "generator": "pyzx.generate.cliffordT",
+        "version": "0.10.4",
+        "parameters": {
+            "qubits": 20,
+            "depth": 600,
+            "seed": 1,
+            "sigma": "0"
+        },
+        "description": "pyzx[0.10.4].generate.cliffordT(qubits=20, depth=600, seed=1, sigma=0)"
+    },
+    "metrics": {
+        "qubits": 20,
+        "depth": 60,
+        "sigma": 0,
+        "t_count": 71,
+        "pyzx_reduced_t_count": 42,
+        "gate_count": 569,
+        "cnot_count": 151,
+        "had_count": 0
+    },
+    "amplitude": {
+        "real": "TBC",
+        "imag": "TBC"
+    }
+}
