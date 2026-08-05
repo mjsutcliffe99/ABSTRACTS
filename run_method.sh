@@ -3,7 +3,8 @@
 METHOD=$1
 BENCHMARK_DIR=$2
 
-RESULTS_DIR="results"
+REPO_DIR=$(pwd)
+RESULTS_DIR="$REPO_DIR/results"
 RESULTS_FILE="$RESULTS_DIR/${METHOD}.json"
 LOGS_DIR="$RESULTS_DIR/logs/$METHOD"
 
@@ -70,12 +71,13 @@ for BENCHMARK_FILE in "${QASM_FILES[@]}"; do
         --pipe \
         --quiet \
         --service-type=exec \
+        --working-directory="$REPO_DIR" \
         -p MemoryMax="$CIRCUIT_MEMORY_MAX" \
         -p MemorySwapMax=0 \
         -p OOMPolicy=stop \
         /usr/bin/time -v -o "$TIME_FILE" \
         timeout --kill-after=10s "$CIRCUIT_TIMEOUT" \
-        ./methods/"$METHOD"/run.sh "$BENCHMARK_FILE" \
+        "$REPO_DIR/methods/$METHOD/run.sh" "$REPO_DIR/$BENCHMARK_FILE" \
         > "$STDOUT_FILE" 2> "$STDERR_FILE"
     then
         RUNNER_EXIT_STATUS=0
