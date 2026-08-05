@@ -1,0 +1,1675 @@
+{
+  "method": "pyzx_bss",
+  "benchmark_set": "circuits/random_clifford_t",
+  "started_at": "2026-08-05T14:31:22Z",
+  "git_commit": "ecd3fdd4ac15deb2ea8113c8c39b249891c9f5aa",
+  "runs": [
+    {
+      "benchmark": "rct_q10_d110_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d110_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q10_d119_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d119_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q10_d39_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d39_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q10_d42_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d42_sigInf_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q10_d45_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d45_sig2_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q10_d48_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d48_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q10_d50_sig10_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d50_sig10_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q10_d50_sig3_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d50_sig3_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q10_d50_sig5_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d50_sig5_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q10_d77_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d77_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q10_d80_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d80_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q10_d80_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d80_sigInf_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q10_d84_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d84_sig2_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q10_d87_sig10_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d87_sig10_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q10_d90_sig5_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d90_sig5_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q10_d93_sig3_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d93_sig3_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d23_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d23_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d23_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d23_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d24_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d24_sig2_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d26_sig5_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d26_sig5_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d27_sig10_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d27_sig10_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d28_sig3_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d28_sig3_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d29_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d29_sigInf_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d42_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d42_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d44_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d44_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d45_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d45_sig2_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d46_sig10_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d46_sig10_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d46_sig3_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d46_sig3_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d48_sig5_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d48_sig5_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d51_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d51_sigInf_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d60_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d60_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d62_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d62_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d65_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d65_sig2_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d66_sig10_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d66_sig10_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d71_sig5_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d71_sig5_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q20_d76_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q20_d76_sigInf_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d18_sig10_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d18_sig10_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d19_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d19_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d19_sig5_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d19_sig5_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d20_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d20_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d20_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d20_sig2_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d22_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d22_sigInf_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d26_sig3_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d26_sig3_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d31_sig10_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d31_sig10_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d31_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d31_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d31_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d31_sig2_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d32_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d32_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d33_sig5_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d33_sig5_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d37_sig3_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d37_sig3_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d39_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d39_sigInf_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d46_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d46_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d46_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d46_sig2_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d49_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d49_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d49_sig3_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d49_sig3_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d50_sig10_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d50_sig10_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d51_sig5_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d51_sig5_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d55_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d55_sigInf_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q30_d59_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q30_d59_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d14_sig10_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d14_sig10_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d14_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d14_sigInf_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d15_sig5_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d15_sig5_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d16_sig3_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d16_sig3_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d17_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d17_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d17_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d17_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d17_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d17_sig2_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d24_sig10_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d24_sig10_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d24_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d24_sigInf_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d26_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d26_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d26_sig3_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d26_sig3_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d27_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d27_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d27_sig5_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d27_sig5_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d29_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d29_sig2_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d33_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d33_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d34_sig10_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d34_sig10_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d35_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d35_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d35_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d35_sigInf_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d37_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d37_sig2_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d39_sig3_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d39_sig3_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d40_sig5_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d40_sig5_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d48_sig5_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d48_sig5_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d49_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d49_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d51_sig10_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d51_sig10_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d52_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d52_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q40_d52_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q40_d52_sig2_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d10_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d10_sig2_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d11_sig10_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d11_sig10_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d12_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d12_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d14_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d14_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d14_sig5_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d14_sig5_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d14_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d14_sigInf_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d15_sig3_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d15_sig3_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d20_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d20_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d20_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d20_sig2_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d21_sig3_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d21_sig3_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d23_sig10_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d23_sig10_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d25_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d25_sigInf_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d26_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d26_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d27_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d27_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d27_sig5_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d27_sig5_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d28_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d28_sig2_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d31_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d31_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d32_sig3_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d32_sig3_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d33_sig10_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d33_sig10_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d34_sig5_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d34_sig5_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d35_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d35_sigInf_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d38_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d38_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d39_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d39_sig2_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d41_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d41_sig1_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d43_sig3_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d43_sig3_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d44_sig10_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d44_sig10_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+,
+    {
+      "benchmark": "rct_q50_d45_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q50_d45_sig0_s1.qasm",
+      "status": "failed",
+      "exit_status": 125,
+      "service_result": "exit-code",
+      "error": "process error",
+      "result": "",
+      "wall_time": "",
+      "user_time_seconds": 0,
+      "system_time_seconds": 0,
+      "cpu_time_seconds": 0.0,
+      "peak_memory_kb": 0
+    }
+
+  ],
+  "finished_at": "2026-08-05T14:31:34Z",
+  "total_wall_time_seconds": 12
+}
