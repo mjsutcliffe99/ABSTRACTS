@@ -5,12 +5,13 @@ BENCHMARK_DIR=$2
 
 RESULTS_DIR="results"
 RESULTS_FILE="$RESULTS_DIR/${METHOD}.json"
+LOGS_DIR="$RESULTS_DIR/logs/$METHOD"
 
 CIRCUIT_TIMEOUT="5m"
 CIRCUIT_MEMORY_MAX="1000M"
 GLOBAL_TIMEOUT_SECONDS=$((3 * 60 * 60))
 
-mkdir -p "$RESULTS_DIR"
+mkdir -p "$RESULTS_DIR" "$LOGS_DIR"
 
 shopt -s nullglob
 QASM_FILES=("$BENCHMARK_DIR"/*.qasm)
@@ -44,40 +45,73 @@ for BENCHMARK_FILE in "${QASM_FILES[@]}"; do
     fi
 
     BENCHMARK_NAME=$(basename "$BENCHMARK_FILE")
-    TIME_FILE=$(mktemp)
-    STDOUT_FILE=$(mktemp)
-    STDERR_FILE=$(mktemp)
+    BENCHMARK_STEM=${BENCHMARK_NAME%.qasm}
+
+    TIME_FILE="$LOGS_DIR/${BENCHMARK_STEM}.time.log"
+    STDOUT_FILE="$LOGS_DIR/${BENCHMARK_STEM}.stdout.log"
+    STDERR_FILE="$LOGS_DIR/${BENCHMARK_STEM}.stderr.log"
+
+    # systemd unit names have a restricted character set.
+    SAFE_METHOD=$(printf '%s' "$METHOD" | tr -c 'A-Za-z0-9_.@-' '-')
+    SAFE_BENCHMARK=$(printf '%s' "$BENCHMARK_STEM" | tr -c 'A-Za-z0-9_.@-' '-')
+    UNIT_NAME="abstracts-${SAFE_METHOD}-${SAFE_BENCHMARK}-$$"
+
+    : > "$TIME_FILE"
+    : > "$STDOUT_FILE"
+    : > "$STDERR_FILE"
 
     echo "Running $METHOD on $BENCHMARK_FILE"
 
-    # Run each circuit in its own memory-limited systemd scope.  The limit is
-    # below the VM's total RAM so that Ubuntu and sshd retain enough memory.
-    if systemd-run --user --scope --quiet \
+    # A transient service gets its own cgroup. If this circuit exceeds
+    # MemoryMax, systemd kills this service rather than the benchmark driver.
+    if systemd-run --user \
+        --unit="$UNIT_NAME" \
+        --wait \
+        --pipe \
+        --quiet \
+        --service-type=exec \
         -p MemoryMax="$CIRCUIT_MEMORY_MAX" \
         -p MemorySwapMax=0 \
+        -p OOMPolicy=stop \
         /usr/bin/time -v -o "$TIME_FILE" \
-        timeout "$CIRCUIT_TIMEOUT" \
+        timeout --kill-after=10s "$CIRCUIT_TIMEOUT" \
         ./methods/"$METHOD"/run.sh "$BENCHMARK_FILE" \
         > "$STDOUT_FILE" 2> "$STDERR_FILE"
     then
-        EXIT_STATUS=0
+        RUNNER_EXIT_STATUS=0
     else
-        EXIT_STATUS=$?
+        RUNNER_EXIT_STATUS=$?
     fi
 
-    if [ "$EXIT_STATUS" -eq 0 ]; then
+    # Query the transient unit before clearing it. Result=oom-kill is a more
+    # reliable OOM indicator than treating every exit 137 as memory-related.
+    SERVICE_RESULT=$(systemctl --user show "$UNIT_NAME.service" \
+        --property=Result --value 2>/dev/null || true)
+    EXEC_MAIN_STATUS=$(systemctl --user show "$UNIT_NAME.service" \
+        --property=ExecMainStatus --value 2>/dev/null || true)
+
+    # Prefer the service process's actual status where available.
+    EXIT_STATUS=${EXEC_MAIN_STATUS:-$RUNNER_EXIT_STATUS}
+
+    if [ "$SERVICE_RESULT" = "oom-kill" ]; then
+        STATUS="failed"
+        ERROR_TYPE='"out of memory"'
+    elif [ "$EXIT_STATUS" -eq 0 ] 2>/dev/null; then
         STATUS="success"
         ERROR_TYPE="null"
-    elif [ "$EXIT_STATUS" -eq 124 ]; then
+    elif [ "$EXIT_STATUS" -eq 124 ] 2>/dev/null; then
         STATUS="timed out"
         ERROR_TYPE='"timeout"'
-    elif [ "$EXIT_STATUS" -eq 137 ]; then
+    elif [ "$EXIT_STATUS" -eq 137 ] 2>/dev/null; then
         STATUS="failed"
-        ERROR_TYPE='"memory limit exceeded or process killed"'
+        ERROR_TYPE='"process killed (SIGKILL)"'
     else
         STATUS="failed"
         ERROR_TYPE='"process error"'
     fi
+
+    # Clear failed transient units after collecting their result.
+    systemctl --user reset-failed "$UNIT_NAME.service" >/dev/null 2>&1 || true
 
     # A process killed early may leave some /usr/bin/time fields absent.
     USER_TIME=$(grep "User time" "$TIME_FILE" | awk '{print $4}' || true)
@@ -90,10 +124,14 @@ for BENCHMARK_FILE in "${QASM_FILES[@]}"; do
     PEAK_MEMORY_KB=${PEAK_MEMORY_KB:-0}
     WALL_TIME=${WALL_TIME:-""}
 
-    if [ "$EXIT_STATUS" -eq 0 ]; then
+    if [ "$STATUS" = "success" ]; then
         RESULT=$(tail -n 1 "$STDOUT_FILE")
     else
         RESULT=""
+        if [ -s "$STDERR_FILE" ]; then
+            echo "Failure details for $BENCHMARK_NAME:"
+            tail -n 20 "$STDERR_FILE"
+        fi
     fi
 
     CPU_TIME=$(python3 - <<EOF_PY
@@ -113,6 +151,7 @@ EOF_PY
       "benchmark_file": "$BENCHMARK_FILE",
       "status": "$STATUS",
       "exit_status": $EXIT_STATUS,
+      "service_result": "$SERVICE_RESULT",
       "error": $ERROR_TYPE,
       "result": "$RESULT",
       "wall_time": "$WALL_TIME",
@@ -123,7 +162,6 @@ EOF_PY
     }
 EOF_JSON
 
-    rm "$TIME_FILE" "$STDOUT_FILE" "$STDERR_FILE"
 done
 
 END_TIME=$(date +%s)
