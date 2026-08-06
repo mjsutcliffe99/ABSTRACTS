@@ -169,12 +169,7 @@
 <body>
   <header>
     <h1>ABSTRACTS Benchmark Explorer</h1>
-    <p>Interactive results for classical simulators of non-Clifford quantum circuits</p>
-    <p>
-      <a href="https://github.com/mjsutcliffe99/ABSTRACTS" target="_blank" rel="noopener">
-        View the GitHub repo
-      </a>
-    </p>
+    <p>Interactive results for classical quantum circuit simulators</p>
   </header>
 
   <main>
@@ -366,7 +361,7 @@
     }
 
     function initialiseControls() {
-      fillAxisSelect(xAxisSelect, "pyzx_reduced_t_count");
+      fillAxisSelect(xAxisSelect, "t_count");
       fillAxisSelect(yAxisSelect, "wall_time_seconds");
 
       const circuitClasses = [
@@ -646,7 +641,7 @@
     }
 
     function resetControls() {
-      xAxisSelect.value = "pyzx_reduced_t_count";
+      xAxisSelect.value = "t_count";
       yAxisSelect.value = "wall_time_seconds";
       xScaleSelect.value = "linear";
       yScaleSelect.value = "log";
