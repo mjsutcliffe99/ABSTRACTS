@@ -1,0 +1,24 @@
+import sys
+import pyzx as zx
+from pyzx.simulation import Strategy
+
+def run(circuit_file: str):
+    with open(circuit_file, "r") as f:
+        qasm = f.read()
+    g = zx.qasm(qasm)
+    q = g.qubits
+    g = g.to_graph()
+    g.apply_state("0"*q)
+    g.apply_effect("0"*q)
+    zx.simplify.full_reduce(g)
+    return zx.to_quimb_tensor(g).contract(output_inds=())
+
+def main():
+    #if len(sys.argv) != 2:
+    #    print("Usage: simulator.py <circuit_file>")
+    #    sys.exit(1)
+    amplitude = run(sys.argv[1])
+    print(amplitude)
+
+if __name__ == "__main__":
+    main()

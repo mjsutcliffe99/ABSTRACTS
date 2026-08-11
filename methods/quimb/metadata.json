@@ -1,0 +1,9 @@
+{
+  "display_name": "Quimb",
+  "language": "python",
+  "implementation": "Quimb",
+  "simulation_type": "strong",
+  "accuracy_type": "exact",
+  "accelerator": "cpu",
+  "repository": "https://github.com/jcmgray/quimb"
+}
