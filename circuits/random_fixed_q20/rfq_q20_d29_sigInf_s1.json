@@ -1,7 +1,7 @@
 {
     "display_name": "rfq_q20_d29_sigInf_s1",
     "file": "rfq_q20_d29_sigInf_s1.qasm",
-    "circuit_class": "random_clifford_t",
+    "circuit_class": "random_fixed_q20",
     "benchmark_set": "random_fixed_q20",
     "provenance": {
         "generator": "pyzx.generate.cliffordT",
