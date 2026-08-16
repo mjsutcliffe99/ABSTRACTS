@@ -1,0 +1,9 @@
+{
+  "display_name": "Qiskit Aer Statevector",
+  "language": "python",
+  "implementation": "Qiskit",
+  "simulation_type": "strong",
+  "accuracy_type": "exact",
+  "accelerator": "cpu",
+  "repository": "https://github.com/Qiskit/qiskit-aer"
+}
