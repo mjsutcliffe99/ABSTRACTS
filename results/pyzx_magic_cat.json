@@ -1,27 +1,27 @@
 {
   "method": "pyzx_magic_cat",
   "benchmark_set": "circuits/random_fixed_q20",
-  "started_at": "2026-08-16T13:05:13Z",
-  "git_commit": "e4256b27c0ddf753e29a7e09febe368e175d7d30",
+  "started_at": "2026-08-16T13:28:14Z",
+  "git_commit": "37ef04338a481369ed7a9bbe367d8a75980144f1",
   "runs": [
     {
-      "benchmark": "rct_q20_d21_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d21_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d21_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d21_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "0",
-      "wall_time": "0:01.51",
-      "user_time_seconds": 0.85,
-      "system_time_seconds": 0.10,
-      "cpu_time_seconds": 0.95,
-      "peak_memory_kb": 76340
+      "wall_time": "0:01.61",
+      "user_time_seconds": 0.87,
+      "system_time_seconds": 0.12,
+      "cpu_time_seconds": 0.99,
+      "peak_memory_kb": 76680
     }
 ,
     {
-      "benchmark": "rct_q20_d25_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d25_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d25_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d25_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
@@ -29,119 +29,119 @@
       "result": "0",
       "wall_time": "0:00.80",
       "user_time_seconds": 0.78,
-      "system_time_seconds": 0.06,
-      "cpu_time_seconds": 0.8400000000000001,
-      "peak_memory_kb": 76496
+      "system_time_seconds": 0.07,
+      "cpu_time_seconds": 0.8500000000000001,
+      "peak_memory_kb": 76652
     }
 ,
     {
-      "benchmark": "rct_q20_d27_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d27_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d27_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d27_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-0.0002022527160024872+0.000589407608001243j)",
       "wall_time": "0:00.80",
-      "user_time_seconds": 0.77,
+      "user_time_seconds": 0.81,
       "system_time_seconds": 0.06,
-      "cpu_time_seconds": 0.8300000000000001,
-      "peak_memory_kb": 76904
+      "cpu_time_seconds": 0.8700000000000001,
+      "peak_memory_kb": 76740
     }
 ,
     {
-      "benchmark": "rct_q20_d29_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d29_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d29_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d29_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-0.0004586620254981334-0.00017263349150062161j)",
       "wall_time": "0:00.80",
-      "user_time_seconds": 0.78,
-      "system_time_seconds": 0.06,
-      "cpu_time_seconds": 0.8400000000000001,
-      "peak_memory_kb": 76776
+      "user_time_seconds": 0.80,
+      "system_time_seconds": 0.07,
+      "cpu_time_seconds": 0.8700000000000001,
+      "peak_memory_kb": 76828
     }
 ,
     {
-      "benchmark": "rct_q20_d30_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d30_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d30_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d30_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-0.000446393341002487+0.0002022527160024876j)",
       "wall_time": "0:00.80",
-      "user_time_seconds": 0.78,
+      "user_time_seconds": 0.80,
       "system_time_seconds": 0.07,
-      "cpu_time_seconds": 0.8500000000000001,
-      "peak_memory_kb": 76708
+      "cpu_time_seconds": 0.8700000000000001,
+      "peak_memory_kb": 76648
     }
 ,
     {
-      "benchmark": "rct_q20_d31_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d31_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d31_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d31_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "0",
       "wall_time": "0:00.80",
-      "user_time_seconds": 0.79,
-      "system_time_seconds": 0.07,
-      "cpu_time_seconds": 0.8600000000000001,
-      "peak_memory_kb": 76708
+      "user_time_seconds": 0.83,
+      "system_time_seconds": 0.06,
+      "cpu_time_seconds": 0.8899999999999999,
+      "peak_memory_kb": 76772
     }
 ,
     {
-      "benchmark": "rct_q20_d34_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d34_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d34_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d34_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(0.00013254228974937738-0.0006146891975015545j)",
       "wall_time": "0:00.90",
-      "user_time_seconds": 0.86,
+      "user_time_seconds": 0.87,
       "system_time_seconds": 0.06,
-      "cpu_time_seconds": 0.9199999999999999,
-      "peak_memory_kb": 76932
+      "cpu_time_seconds": 0.9299999999999999,
+      "peak_memory_kb": 76856
     }
 ,
     {
-      "benchmark": "rct_q20_d35_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d35_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d35_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d35_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(0.0001757006626245326-0.0009778329638776416j)",
       "wall_time": "0:00.90",
-      "user_time_seconds": 0.88,
-      "system_time_seconds": 0.06,
-      "cpu_time_seconds": 0.94,
-      "peak_memory_kb": 76992
+      "user_time_seconds": 0.92,
+      "system_time_seconds": 0.05,
+      "cpu_time_seconds": 0.9700000000000001,
+      "peak_memory_kb": 76976
     }
 ,
     {
-      "benchmark": "rct_q20_d36_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d36_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d36_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d36_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(0.002342820819754038+0.002155377716002484j)",
       "wall_time": "0:00.90",
-      "user_time_seconds": 0.91,
-      "system_time_seconds": 0.07,
-      "cpu_time_seconds": 0.98,
-      "peak_memory_kb": 77072
+      "user_time_seconds": 0.94,
+      "system_time_seconds": 0.05,
+      "cpu_time_seconds": 0.99,
+      "peak_memory_kb": 76948
     }
 ,
     {
-      "benchmark": "rct_q20_d37_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d37_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d37_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d37_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
@@ -149,74 +149,74 @@
       "result": "(-0.0012228719425007748+0.0009176961612507758j)",
       "wall_time": "0:01.00",
       "user_time_seconds": 0.99,
-      "system_time_seconds": 0.07,
-      "cpu_time_seconds": 1.06,
-      "peak_memory_kb": 77180
+      "system_time_seconds": 0.06,
+      "cpu_time_seconds": 1.05,
+      "peak_memory_kb": 77200
     }
 ,
     {
-      "benchmark": "rct_q20_d38_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d38_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d38_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d38_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-0.0004220101051253102+0.0009904737586277973j)",
       "wall_time": "0:01.00",
-      "user_time_seconds": 1.03,
-      "system_time_seconds": 0.06,
-      "cpu_time_seconds": 1.09,
-      "peak_memory_kb": 77140
+      "user_time_seconds": 1.01,
+      "system_time_seconds": 0.05,
+      "cpu_time_seconds": 1.06,
+      "peak_memory_kb": 77156
     }
 ,
     {
-      "benchmark": "rct_q20_d39_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d39_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d39_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d39_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-0.0004220101051253105+0.0009904737586277973j)",
       "wall_time": "0:01.00",
-      "user_time_seconds": 0.98,
-      "system_time_seconds": 0.07,
-      "cpu_time_seconds": 1.05,
-      "peak_memory_kb": 77192
+      "user_time_seconds": 1.00,
+      "system_time_seconds": 0.06,
+      "cpu_time_seconds": 1.06,
+      "peak_memory_kb": 77148
     }
 ,
     {
-      "benchmark": "rct_q20_d41_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d41_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d41_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d41_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-0.0008326498793781093-0.0008736394347524861j)",
       "wall_time": "0:01.00",
-      "user_time_seconds": 0.99,
+      "user_time_seconds": 1.01,
       "system_time_seconds": 0.07,
-      "cpu_time_seconds": 1.06,
-      "peak_memory_kb": 77112
+      "cpu_time_seconds": 1.08,
+      "peak_memory_kb": 77196
     }
 ,
     {
-      "benchmark": "rct_q20_d42_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d42_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d42_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d42_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(0.000626694760312887+0.0002352022333125768j)",
-      "wall_time": "0:01.00",
-      "user_time_seconds": 1.01,
-      "system_time_seconds": 0.07,
-      "cpu_time_seconds": 1.08,
-      "peak_memory_kb": 77204
+      "wall_time": "0:01.10",
+      "user_time_seconds": 1.04,
+      "system_time_seconds": 0.06,
+      "cpu_time_seconds": 1.1,
+      "peak_memory_kb": 77148
     }
 ,
     {
-      "benchmark": "rct_q20_d45_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d45_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d45_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d45_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
@@ -226,72 +226,72 @@
       "user_time_seconds": 0.99,
       "system_time_seconds": 0.07,
       "cpu_time_seconds": 1.06,
-      "peak_memory_kb": 77140
+      "peak_memory_kb": 77056
     }
 ,
     {
-      "benchmark": "rct_q20_d46_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d46_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d46_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d46_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-0.00017416707706257857-0.0008119690465636645j)",
       "wall_time": "0:01.10",
-      "user_time_seconds": 1.05,
-      "system_time_seconds": 0.06,
+      "user_time_seconds": 1.04,
+      "system_time_seconds": 0.07,
       "cpu_time_seconds": 1.11,
-      "peak_memory_kb": 77328
+      "peak_memory_kb": 77208
     }
 ,
     {
-      "benchmark": "rct_q20_d48_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d48_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d48_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d48_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(0.00011683432387531018-0.0006378019695010874j)",
       "wall_time": "0:01.00",
-      "user_time_seconds": 1.00,
-      "system_time_seconds": 0.05,
-      "cpu_time_seconds": 1.05,
-      "peak_memory_kb": 77100
+      "user_time_seconds": 0.99,
+      "system_time_seconds": 0.08,
+      "cpu_time_seconds": 1.07,
+      "peak_memory_kb": 77200
     }
 ,
     {
-      "benchmark": "rct_q20_d51_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d51_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d51_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d51_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-0.00046210130687655496+0.0003748862075031093j)",
       "wall_time": "0:01.00",
-      "user_time_seconds": 1.01,
-      "system_time_seconds": 0.07,
+      "user_time_seconds": 1.02,
+      "system_time_seconds": 0.06,
       "cpu_time_seconds": 1.08,
-      "peak_memory_kb": 77144
+      "peak_memory_kb": 77060
     }
 ,
     {
-      "benchmark": "rct_q20_d52_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d52_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d52_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d52_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-7.137557265722234e-05+0.000608500360968632j)",
       "wall_time": "0:01.40",
-      "user_time_seconds": 1.34,
-      "system_time_seconds": 0.07,
-      "cpu_time_seconds": 1.4100000000000001,
-      "peak_memory_kb": 77576
+      "user_time_seconds": 1.38,
+      "system_time_seconds": 0.06,
+      "cpu_time_seconds": 1.44,
+      "peak_memory_kb": 77820
     }
 ,
     {
-      "benchmark": "rct_q20_d53_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d53_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d53_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d53_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
@@ -299,222 +299,222 @@
       "result": "(0.0004058529624396745+0.0009306545719703416j)",
       "wall_time": "0:02.30",
       "user_time_seconds": 2.26,
-      "system_time_seconds": 0.08,
-      "cpu_time_seconds": 2.34,
-      "peak_memory_kb": 79352
+      "system_time_seconds": 0.07,
+      "cpu_time_seconds": 2.3299999999999996,
+      "peak_memory_kb": 79316
     }
 ,
     {
-      "benchmark": "rct_q20_d54_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d54_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d54_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d54_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-0.0004938621017366491+0.0002023570297020944j)",
-      "wall_time": "0:02.10",
-      "user_time_seconds": 2.13,
+      "wall_time": "0:02.20",
+      "user_time_seconds": 2.18,
       "system_time_seconds": 0.07,
-      "cpu_time_seconds": 2.1999999999999997,
-      "peak_memory_kb": 79040
+      "cpu_time_seconds": 2.25,
+      "peak_memory_kb": 79052
     }
 ,
     {
-      "benchmark": "rct_q20_d58_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d58_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d58_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d58_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(0.0005738969833904088+9.771432376537209e-05j)",
       "wall_time": "0:01.90",
-      "user_time_seconds": 1.87,
-      "system_time_seconds": 0.06,
-      "cpu_time_seconds": 1.9300000000000002,
-      "peak_memory_kb": 78700
+      "user_time_seconds": 1.92,
+      "system_time_seconds": 0.07,
+      "cpu_time_seconds": 1.99,
+      "peak_memory_kb": 78572
     }
 ,
     {
-      "benchmark": "rct_q20_d61_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d61_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d61_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d61_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-3.259336806215216e-05+0.0009498403525013583j)",
       "wall_time": "0:02.60",
-      "user_time_seconds": 2.59,
+      "user_time_seconds": 2.63,
       "system_time_seconds": 0.07,
-      "cpu_time_seconds": 2.6599999999999997,
-      "peak_memory_kb": 79836
+      "cpu_time_seconds": 2.6999999999999997,
+      "peak_memory_kb": 79900
     }
 ,
     {
-      "benchmark": "rct_q20_d62_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d62_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d62_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d62_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-0.00038096041239784673+0.00014257871375846303j)",
-      "wall_time": "0:04.71",
-      "user_time_seconds": 4.73,
-      "system_time_seconds": 0.07,
-      "cpu_time_seconds": 4.800000000000001,
-      "peak_memory_kb": 83336
+      "wall_time": "0:04.81",
+      "user_time_seconds": 4.76,
+      "system_time_seconds": 0.06,
+      "cpu_time_seconds": 4.819999999999999,
+      "peak_memory_kb": 83288
     }
 ,
     {
-      "benchmark": "rct_q20_d63_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d63_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d63_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d63_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-0.00040529713449320953-0.001148284014306211j)",
       "wall_time": "0:06.01",
-      "user_time_seconds": 6.02,
-      "system_time_seconds": 0.08,
-      "cpu_time_seconds": 6.1,
-      "peak_memory_kb": 85396
+      "user_time_seconds": 5.97,
+      "system_time_seconds": 0.09,
+      "cpu_time_seconds": 6.06,
+      "peak_memory_kb": 85240
     }
 ,
     {
-      "benchmark": "rct_q20_d66_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d66_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d66_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d66_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-0.0007028009976817892+0.0001243474339520268j)",
-      "wall_time": "0:09.82",
-      "user_time_seconds": 9.79,
-      "system_time_seconds": 0.10,
-      "cpu_time_seconds": 9.889999999999999,
-      "peak_memory_kb": 89428
+      "wall_time": "0:09.72",
+      "user_time_seconds": 9.68,
+      "system_time_seconds": 0.09,
+      "cpu_time_seconds": 9.77,
+      "peak_memory_kb": 89168
     }
 ,
     {
-      "benchmark": "rct_q20_d69_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d69_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d69_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d69_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-0.0005400507652735386-0.00010883116627320388j)",
-      "wall_time": "0:10.81",
-      "user_time_seconds": 10.82,
-      "system_time_seconds": 0.09,
-      "cpu_time_seconds": 10.91,
-      "peak_memory_kb": 92964
+      "wall_time": "0:10.82",
+      "user_time_seconds": 10.77,
+      "system_time_seconds": 0.10,
+      "cpu_time_seconds": 10.87,
+      "peak_memory_kb": 93080
     }
 ,
     {
-      "benchmark": "rct_q20_d70_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d70_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d70_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d70_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(0.0006137034593827785-0.0008043918088822176j)",
-      "wall_time": "0:08.31",
-      "user_time_seconds": 8.26,
+      "wall_time": "0:08.41",
+      "user_time_seconds": 8.34,
       "system_time_seconds": 0.08,
-      "cpu_time_seconds": 8.34,
-      "peak_memory_kb": 89080
+      "cpu_time_seconds": 8.42,
+      "peak_memory_kb": 89244
     }
 ,
     {
-      "benchmark": "rct_q20_d71_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d71_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d71_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d71_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(0.0017126017310023834-0.00044469296695254224j)",
-      "wall_time": "0:07.51",
-      "user_time_seconds": 7.45,
+      "wall_time": "0:07.41",
+      "user_time_seconds": 7.40,
       "system_time_seconds": 0.08,
-      "cpu_time_seconds": 7.53,
-      "peak_memory_kb": 87276
+      "cpu_time_seconds": 7.48,
+      "peak_memory_kb": 87492
     }
 ,
     {
-      "benchmark": "rct_q20_d72_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d72_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d72_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d72_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-0.0006388960115711154-0.0008014545457841152j)",
-      "wall_time": "0:16.52",
-      "user_time_seconds": 16.48,
-      "system_time_seconds": 0.10,
-      "cpu_time_seconds": 16.580000000000002,
-      "peak_memory_kb": 101412
+      "wall_time": "0:16.62",
+      "user_time_seconds": 16.63,
+      "system_time_seconds": 0.09,
+      "cpu_time_seconds": 16.72,
+      "peak_memory_kb": 101512
     }
 ,
     {
-      "benchmark": "rct_q20_d75_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d75_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d75_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d75_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(0.0003804550884848182-0.0006175113448627686j)",
-      "wall_time": "0:56.38",
-      "user_time_seconds": 56.22,
+      "wall_time": "0:58.68",
+      "user_time_seconds": 58.52,
       "system_time_seconds": 0.21,
-      "cpu_time_seconds": 56.43,
-      "peak_memory_kb": 165120
+      "cpu_time_seconds": 58.730000000000004,
+      "peak_memory_kb": 165048
     }
 ,
     {
-      "benchmark": "rct_q20_d76_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d76_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d76_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d76_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(0.00032350008862005113-0.00026929629672614445j)",
-      "wall_time": "0:51.07",
-      "user_time_seconds": 50.98,
-      "system_time_seconds": 0.16,
-      "cpu_time_seconds": 51.13999999999999,
-      "peak_memory_kb": 156192
+      "wall_time": "0:52.57",
+      "user_time_seconds": 52.47,
+      "system_time_seconds": 0.20,
+      "cpu_time_seconds": 52.67,
+      "peak_memory_kb": 156284
     }
 ,
     {
-      "benchmark": "rct_q20_d77_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d77_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d77_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d77_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(0.000855673271756158-0.00024927395274142844j)",
-      "wall_time": "2:14.08",
-      "user_time_seconds": 133.82,
-      "system_time_seconds": 0.39,
-      "cpu_time_seconds": 134.20999999999998,
-      "peak_memory_kb": 291504
+      "wall_time": "2:17.39",
+      "user_time_seconds": 137.08,
+      "system_time_seconds": 0.43,
+      "cpu_time_seconds": 137.51000000000002,
+      "peak_memory_kb": 291328
     }
 ,
     {
-      "benchmark": "rct_q20_d80_sigInf_s1.qasm",
-      "benchmark_file": "circuits/random_fixed_q20/rct_q20_d80_sigInf_s1.qasm",
+      "benchmark": "rfq_q20_d80_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d80_sigInf_s1.qasm",
       "status": "success",
       "exit_status": 0,
       "service_result": "success",
       "error": null,
       "result": "(-0.0001957695203910858-0.00021061941899699918j)",
-      "wall_time": "3:30.29",
-      "user_time_seconds": 209.85,
-      "system_time_seconds": 0.59,
-      "cpu_time_seconds": 210.44,
-      "peak_memory_kb": 415764
+      "wall_time": "3:36.01",
+      "user_time_seconds": 215.57,
+      "system_time_seconds": 0.62,
+      "cpu_time_seconds": 216.19,
+      "peak_memory_kb": 415880
     }
 
   ],
-  "finished_at": "2026-08-16T13:14:20Z",
-  "total_wall_time_seconds": 547
+  "finished_at": "2026-08-16T13:37:34Z",
+  "total_wall_time_seconds": 560
 }
