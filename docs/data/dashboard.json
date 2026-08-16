@@ -1263,7 +1263,7 @@
     },
     "rfq_q20_d21_sigInf_s1": {
       "display_name": "rfq_q20_d21_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 21,
@@ -1274,7 +1274,7 @@
     },
     "rfq_q20_d25_sigInf_s1": {
       "display_name": "rfq_q20_d25_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 25,
@@ -1285,7 +1285,7 @@
     },
     "rfq_q20_d27_sigInf_s1": {
       "display_name": "rfq_q20_d27_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 27,
@@ -1296,7 +1296,7 @@
     },
     "rfq_q20_d29_sigInf_s1": {
       "display_name": "rfq_q20_d29_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 29,
@@ -1307,7 +1307,7 @@
     },
     "rfq_q20_d30_sigInf_s1": {
       "display_name": "rfq_q20_d30_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 30,
@@ -1318,7 +1318,7 @@
     },
     "rfq_q20_d31_sigInf_s1": {
       "display_name": "rfq_q20_d31_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 31,
@@ -1329,7 +1329,7 @@
     },
     "rfq_q20_d34_sigInf_s1": {
       "display_name": "rfq_q20_d34_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 34,
@@ -1340,7 +1340,7 @@
     },
     "rfq_q20_d35_sigInf_s1": {
       "display_name": "rfq_q20_d35_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 35,
@@ -1351,7 +1351,7 @@
     },
     "rfq_q20_d36_sigInf_s1": {
       "display_name": "rfq_q20_d36_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 36,
@@ -1362,7 +1362,7 @@
     },
     "rfq_q20_d37_sigInf_s1": {
       "display_name": "rfq_q20_d37_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 37,
@@ -1373,7 +1373,7 @@
     },
     "rfq_q20_d38_sigInf_s1": {
       "display_name": "rfq_q20_d38_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 38,
@@ -1384,7 +1384,7 @@
     },
     "rfq_q20_d39_sigInf_s1": {
       "display_name": "rfq_q20_d39_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 39,
@@ -1395,7 +1395,7 @@
     },
     "rfq_q20_d41_sigInf_s1": {
       "display_name": "rfq_q20_d41_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 41,
@@ -1406,7 +1406,7 @@
     },
     "rfq_q20_d42_sigInf_s1": {
       "display_name": "rfq_q20_d42_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 42,
@@ -1417,7 +1417,7 @@
     },
     "rfq_q20_d45_sigInf_s1": {
       "display_name": "rfq_q20_d45_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 45,
@@ -1428,7 +1428,7 @@
     },
     "rfq_q20_d46_sigInf_s1": {
       "display_name": "rfq_q20_d46_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 46,
@@ -1439,7 +1439,7 @@
     },
     "rfq_q20_d48_sigInf_s1": {
       "display_name": "rfq_q20_d48_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 48,
@@ -1450,7 +1450,7 @@
     },
     "rfq_q20_d51_sigInf_s1": {
       "display_name": "rfq_q20_d51_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 51,
@@ -1461,7 +1461,7 @@
     },
     "rfq_q20_d52_sigInf_s1": {
       "display_name": "rfq_q20_d52_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 52,
@@ -1472,7 +1472,7 @@
     },
     "rfq_q20_d53_sigInf_s1": {
       "display_name": "rfq_q20_d53_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 53,
@@ -1483,7 +1483,7 @@
     },
     "rfq_q20_d54_sigInf_s1": {
       "display_name": "rfq_q20_d54_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 54,
@@ -1494,7 +1494,7 @@
     },
     "rfq_q20_d58_sigInf_s1": {
       "display_name": "rfq_q20_d58_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 58,
@@ -1505,7 +1505,7 @@
     },
     "rfq_q20_d61_sigInf_s1": {
       "display_name": "rfq_q20_d61_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 61,
@@ -1516,7 +1516,7 @@
     },
     "rfq_q20_d62_sigInf_s1": {
       "display_name": "rfq_q20_d62_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 62,
@@ -1527,7 +1527,7 @@
     },
     "rfq_q20_d63_sigInf_s1": {
       "display_name": "rfq_q20_d63_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 63,
@@ -1538,7 +1538,7 @@
     },
     "rfq_q20_d66_sigInf_s1": {
       "display_name": "rfq_q20_d66_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 66,
@@ -1549,7 +1549,7 @@
     },
     "rfq_q20_d69_sigInf_s1": {
       "display_name": "rfq_q20_d69_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 69,
@@ -1560,7 +1560,7 @@
     },
     "rfq_q20_d70_sigInf_s1": {
       "display_name": "rfq_q20_d70_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 70,
@@ -1571,7 +1571,7 @@
     },
     "rfq_q20_d71_sigInf_s1": {
       "display_name": "rfq_q20_d71_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 71,
@@ -1582,7 +1582,7 @@
     },
     "rfq_q20_d72_sigInf_s1": {
       "display_name": "rfq_q20_d72_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 72,
@@ -1593,7 +1593,7 @@
     },
     "rfq_q20_d75_sigInf_s1": {
       "display_name": "rfq_q20_d75_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 75,
@@ -1604,7 +1604,7 @@
     },
     "rfq_q20_d76_sigInf_s1": {
       "display_name": "rfq_q20_d76_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 76,
@@ -1615,7 +1615,7 @@
     },
     "rfq_q20_d77_sigInf_s1": {
       "display_name": "rfq_q20_d77_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 77,
@@ -1626,7 +1626,7 @@
     },
     "rfq_q20_d80_sigInf_s1": {
       "display_name": "rfq_q20_d80_sigInf_s1",
-      "circuit_class": "random_clifford_t",
+      "circuit_class": "random_fixed_q20",
       "benchmark_set": "random_fixed_q20",
       "qubits": 20,
       "depth": 80,
