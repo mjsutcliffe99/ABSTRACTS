@@ -5,6 +5,90 @@
   "git_commit": "37ef04338a481369ed7a9bbe367d8a75980144f1",
   "runs": [
     {
+      "benchmark": "rct_q10_d110_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d110_sig0_s1.qasm",
+      "status": "success",
+      "exit_status": 0,
+      "error": null,
+      "result": "(-0.020563457534511262-0.0027866732330011955j)",
+      "wall_time": "0:10.61",
+      "user_time_seconds": 9.92,
+      "system_time_seconds": 0.10,
+      "cpu_time_seconds": 10.02,
+      "peak_memory_kb": 91680
+    }
+,
+    {
+      "benchmark": "rct_q10_d119_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d119_sig1_s1.qasm",
+      "status": "success",
+      "exit_status": 0,
+      "error": null,
+      "result": "(-0.007530078103026333-0.0015562104292477796j)",
+      "wall_time": "1:10.80",
+      "user_time_seconds": 70.70,
+      "system_time_seconds": 0.21,
+      "cpu_time_seconds": 70.91,
+      "peak_memory_kb": 185484
+    }
+,
+    {
+      "benchmark": "rct_q10_d39_sig0_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d39_sig0_s1.qasm",
+      "status": "success",
+      "exit_status": 0,
+      "error": null,
+      "result": "(0.09659344555217904+0.02896177172801985j)",
+      "wall_time": "0:00.80",
+      "user_time_seconds": 0.78,
+      "system_time_seconds": 0.07,
+      "cpu_time_seconds": 0.8500000000000001,
+      "peak_memory_kb": 76640
+    }
+,
+    {
+      "benchmark": "rct_q10_d42_sigInf_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d42_sigInf_s1.qasm",
+      "status": "success",
+      "exit_status": 0,
+      "error": null,
+      "result": "(-0.0032360434560398076-0.007812499999999987j)",
+      "wall_time": "0:00.80",
+      "user_time_seconds": 0.79,
+      "system_time_seconds": 0.07,
+      "cpu_time_seconds": 0.8600000000000001,
+      "peak_memory_kb": 76784
+    }
+,
+    {
+      "benchmark": "rct_q10_d45_sig2_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d45_sig2_s1.qasm",
+      "status": "success",
+      "exit_status": 0,
+      "error": null,
+      "result": "(0.03219781518405967-0.04001031518405968j)",
+      "wall_time": "0:00.80",
+      "user_time_seconds": 0.82,
+      "system_time_seconds": 0.06,
+      "cpu_time_seconds": 0.8799999999999999,
+      "peak_memory_kb": 76772
+    }
+,
+    {
+      "benchmark": "rct_q10_d48_sig1_s1.qasm",
+      "benchmark_file": "circuits/random_clifford_t/rct_q10_d48_sig1_s1.qasm",
+      "status": "success",
+      "exit_status": 0,
+      "error": null,
+      "result": "(-0.007812499999999989+0.03448604345603977j)",
+      "wall_time": "0:00.80",
+      "user_time_seconds": 0.79,
+      "system_time_seconds": 0.06,
+      "cpu_time_seconds": 0.8500000000000001,
+      "peak_memory_kb": 76608
+    }
+,
+    {
       "benchmark": "rfq_q20_d21_sigInf_s1.qasm",
       "benchmark_file": "circuits/random_fixed_q20/rfq_q20_d21_sigInf_s1.qasm",
       "status": "success",
