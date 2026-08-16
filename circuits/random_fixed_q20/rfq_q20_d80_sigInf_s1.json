@@ -1,0 +1,31 @@
+{
+    "display_name": "rfq_q20_d80_sigInf_s1",
+    "file": "rfq_q20_d80_sigInf_s1.qasm",
+    "circuit_class": "random_clifford_t",
+    "benchmark_set": "random_fixed_q20",
+    "provenance": {
+        "generator": "pyzx.generate.cliffordT",
+        "version": "0.10.4",
+        "parameters": {
+            "qubits": 20,
+            "depth": 620,
+            "seed": 1,
+            "sigma": "None"
+        },
+        "description": "pyzx[0.10.4].generate.cliffordT(qubits=20, depth=620, seed=1, sigma=None)"
+    },
+    "metrics": {
+        "qubits": 20,
+        "depth": 80,
+        "sigma": "Inf",
+        "t_count": 68,
+        "pyzx_reduced_t_count": 48,
+        "gate_count": 577,
+        "cnot_count": 149,
+        "had_count": 0
+    },
+    "amplitude": {
+        "real": "TBC",
+        "imag": "TBC"
+    }
+}
