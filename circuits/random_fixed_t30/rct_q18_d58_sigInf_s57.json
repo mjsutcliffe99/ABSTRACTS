@@ -1,0 +1,31 @@
+{
+    "display_name": "rct_q18_d58_sigInf_s57",
+    "file": "rct_q18_d58_sigInf_s57.qasm",
+    "circuit_class": "random_fixed_t30",
+    "benchmark_set": "random_fixed_t30",
+    "provenance": {
+        "generator": "pyzx.generate.cliffordT",
+        "version": "0.10.4",
+        "parameters": {
+            "qubits": 18,
+            "depth": 450,
+            "seed": 57,
+            "sigma": "None"
+        },
+        "description": "pyzx[0.10.4].generate.cliffordT(qubits=18, depth=450, seed=57, sigma=None)"
+    },
+    "metrics": {
+        "qubits": 18,
+        "depth": 58,
+        "sigma": "Inf",
+        "t_count": 58,
+        "pyzx_reduced_t_count": 41,
+        "gate_count": 428,
+        "cnot_count": 100,
+        "had_count": 0
+    },
+    "amplitude": {
+        "real": "TBC",
+        "imag": "TBC"
+    }
+}
