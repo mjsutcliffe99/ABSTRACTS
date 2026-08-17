@@ -1,0 +1,31 @@
+{
+    "display_name": "rct_q3_d167_sigInf_s822",
+    "file": "rct_q3_d167_sigInf_s822.qasm",
+    "circuit_class": "random_fixed_t30",
+    "benchmark_set": "random_fixed_t30",
+    "provenance": {
+        "generator": "pyzx.generate.cliffordT",
+        "version": "0.10.4",
+        "parameters": {
+            "qubits": 3,
+            "depth": 300,
+            "seed": 822,
+            "sigma": "None"
+        },
+        "description": "pyzx[0.10.4].generate.cliffordT(qubits=3, depth=300, seed=822, sigma=None)"
+    },
+    "metrics": {
+        "qubits": 3,
+        "depth": 167,
+        "sigma": "Inf",
+        "t_count": 35,
+        "pyzx_reduced_t_count": 30,
+        "gate_count": 281,
+        "cnot_count": 74,
+        "had_count": 0
+    },
+    "amplitude": {
+        "real": "TBC",
+        "imag": "TBC"
+    }
+}

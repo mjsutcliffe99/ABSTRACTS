@@ -1,0 +1,31 @@
+{
+    "display_name": "rct_q5_d115_sigInf_s270",
+    "file": "rct_q5_d115_sigInf_s270.qasm",
+    "circuit_class": "random_fixed_t30",
+    "benchmark_set": "random_fixed_t30",
+    "provenance": {
+        "generator": "pyzx.generate.cliffordT",
+        "version": "0.10.4",
+        "parameters": {
+            "qubits": 5,
+            "depth": 300,
+            "seed": 270,
+            "sigma": "None"
+        },
+        "description": "pyzx[0.10.4].generate.cliffordT(qubits=5, depth=300, seed=270, sigma=None)"
+    },
+    "metrics": {
+        "qubits": 5,
+        "depth": 115,
+        "sigma": "Inf",
+        "t_count": 35,
+        "pyzx_reduced_t_count": 30,
+        "gate_count": 283,
+        "cnot_count": 84,
+        "had_count": 0
+    },
+    "amplitude": {
+        "real": "TBC",
+        "imag": "TBC"
+    }
+}

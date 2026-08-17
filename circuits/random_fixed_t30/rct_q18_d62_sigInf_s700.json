@@ -1,0 +1,31 @@
+{
+    "display_name": "rct_q18_d62_sigInf_s700",
+    "file": "rct_q18_d62_sigInf_s700.qasm",
+    "circuit_class": "random_fixed_t30",
+    "benchmark_set": "random_fixed_t30",
+    "provenance": {
+        "generator": "pyzx.generate.cliffordT",
+        "version": "0.10.4",
+        "parameters": {
+            "qubits": 18,
+            "depth": 450,
+            "seed": 700,
+            "sigma": "None"
+        },
+        "description": "pyzx[0.10.4].generate.cliffordT(qubits=18, depth=450, seed=700, sigma=None)"
+    },
+    "metrics": {
+        "qubits": 18,
+        "depth": 62,
+        "sigma": "Inf",
+        "t_count": 54,
+        "pyzx_reduced_t_count": 30,
+        "gate_count": 424,
+        "cnot_count": 110,
+        "had_count": 0
+    },
+    "amplitude": {
+        "real": "TBC",
+        "imag": "TBC"
+    }
+}

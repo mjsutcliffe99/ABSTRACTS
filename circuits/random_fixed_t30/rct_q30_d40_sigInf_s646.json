@@ -1,0 +1,31 @@
+{
+    "display_name": "rct_q30_d40_sigInf_s646",
+    "file": "rct_q30_d40_sigInf_s646.qasm",
+    "circuit_class": "random_fixed_t30",
+    "benchmark_set": "random_fixed_t30",
+    "provenance": {
+        "generator": "pyzx.generate.cliffordT",
+        "version": "0.10.4",
+        "parameters": {
+            "qubits": 30,
+            "depth": 550,
+            "seed": 646,
+            "sigma": "None"
+        },
+        "description": "pyzx[0.10.4].generate.cliffordT(qubits=30, depth=550, seed=646, sigma=None)"
+    },
+    "metrics": {
+        "qubits": 30,
+        "depth": 40,
+        "sigma": "Inf",
+        "t_count": 67,
+        "pyzx_reduced_t_count": 30,
+        "gate_count": 513,
+        "cnot_count": 123,
+        "had_count": 0
+    },
+    "amplitude": {
+        "real": "TBC",
+        "imag": "TBC"
+    }
+}

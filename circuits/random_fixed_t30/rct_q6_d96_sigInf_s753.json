@@ -1,0 +1,31 @@
+{
+    "display_name": "rct_q6_d96_sigInf_s753",
+    "file": "rct_q6_d96_sigInf_s753.qasm",
+    "circuit_class": "random_fixed_t30",
+    "benchmark_set": "random_fixed_t30",
+    "provenance": {
+        "generator": "pyzx.generate.cliffordT",
+        "version": "0.10.4",
+        "parameters": {
+            "qubits": 6,
+            "depth": 300,
+            "seed": 753,
+            "sigma": "None"
+        },
+        "description": "pyzx[0.10.4].generate.cliffordT(qubits=6, depth=300, seed=753, sigma=None)"
+    },
+    "metrics": {
+        "qubits": 6,
+        "depth": 96,
+        "sigma": "Inf",
+        "t_count": 38,
+        "pyzx_reduced_t_count": 30,
+        "gate_count": 277,
+        "cnot_count": 69,
+        "had_count": 0
+    },
+    "amplitude": {
+        "real": "TBC",
+        "imag": "TBC"
+    }
+}
