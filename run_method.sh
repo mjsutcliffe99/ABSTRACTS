@@ -1,7 +1,7 @@
 #!/bin/bash
 
 METHOD=$1
-BENCHMARK_DIR=$2
+BENCHMARK_DIR=$(realpath "$2")
 
 REPO_DIR=$(pwd)
 RESULTS_DIR="$REPO_DIR/results"
@@ -14,11 +14,12 @@ GLOBAL_TIMEOUT_SECONDS=$((3 * 60 * 60))
 
 mkdir -p "$RESULTS_DIR" "$LOGS_DIR"
 
-shopt -s nullglob
-QASM_FILES=("$BENCHMARK_DIR"/*.qasm)
+mapfile -d '' QASM_FILES < <(
+    find "$BENCHMARK_DIR" -type f -name '*.qasm' -print0 | sort -z
+)
 
 if [ ${#QASM_FILES[@]} -eq 0 ]; then
-    echo "No QASM files found in $BENCHMARK_DIR" >&2
+    echo "No QASM files found under $BENCHMARK_DIR" >&2
     exit 1
 fi
 
@@ -46,7 +47,9 @@ for BENCHMARK_FILE in "${QASM_FILES[@]}"; do
     fi
 
     BENCHMARK_NAME=$(basename "$BENCHMARK_FILE")
-    BENCHMARK_STEM=${BENCHMARK_NAME%.qasm}
+    BENCHMARK_RELATIVE="${BENCHMARK_FILE#"$BENCHMARK_DIR"/}"
+    BENCHMARK_STEM="${BENCHMARK_RELATIVE%.qasm}"
+    BENCHMARK_STEM="${BENCHMARK_STEM//\//__}"
 
     TIME_FILE="$LOGS_DIR/${BENCHMARK_STEM}.time.log"
     STDOUT_FILE="$LOGS_DIR/${BENCHMARK_STEM}.stdout.log"
@@ -77,7 +80,7 @@ for BENCHMARK_FILE in "${QASM_FILES[@]}"; do
         -p OOMPolicy=stop \
         /usr/bin/time -v -o "$TIME_FILE" \
         timeout --kill-after=10s "$CIRCUIT_TIMEOUT" \
-        "$REPO_DIR/methods/$METHOD/run.sh" "$REPO_DIR/$BENCHMARK_FILE" \
+        "$REPO_DIR/methods/$METHOD/run.sh" "$BENCHMARK_FILE" \
         > "$STDOUT_FILE" 2> "$STDERR_FILE"
     then
         RUNNER_EXIT_STATUS=0
@@ -149,7 +152,7 @@ EOF_PY
 
     cat >> "$RESULTS_FILE" <<EOF_JSON
     {
-      "benchmark": "$BENCHMARK_NAME",
+      "benchmark": "$BENCHMARK_RELATIVE",
       "benchmark_file": "$BENCHMARK_FILE",
       "status": "$STATUS",
       "exit_status": $EXIT_STATUS,
