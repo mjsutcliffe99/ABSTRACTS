@@ -1,0 +1,9 @@
+{
+  "display_name": "Qulacs",
+  "language": "python",
+  "implementation": "Qulacs",
+  "simulation_type": "strong",
+  "accuracy_type": "exact",
+  "accelerator": "cpu",
+  "repository": ""
+}

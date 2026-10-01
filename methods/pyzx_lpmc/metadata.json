@@ -1,0 +1,9 @@
+{
+  "display_name": "PyZX Lone Phase and MultiCat 3",
+  "language": "python",
+  "implementation": "PyZX",
+  "simulation_type": "strong",
+  "accuracy_type": "exact",
+  "accelerator": "cpu",
+  "repository": "https://github.com/zxcalc/pyzx"
+}
